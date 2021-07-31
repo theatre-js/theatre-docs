@@ -51,7 +51,14 @@ module.exports = {
       }
     ],
     sidebarDepth: 1,
-    sidebar: ["/", "/support", "/faq", "/api"],
-    lastUpdated: "Last Updated"
+    sidebar: ["/", "/api", "/support", "/faq"],
+    lastUpdated: "Last Updated",
+
+    repo: 'ariaminaei/theatre',
+    docsRepo: 'ariaminaei/theatre-docs',
+    docsDir: 'docs',
+    docsBranch: 'main',
+    editLinks: true,
+    editLinkText: 'Edit this page on Github'
   }
 }
