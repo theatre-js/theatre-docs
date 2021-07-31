@@ -40,6 +40,10 @@ module.exports = {
         text: "Get in touch",
         items: [
           {
+            text: "Discord community",
+            link: "https://discord.gg/bm9f8F9Y9N"
+          },
+          {
             text: "Twitter",
             link: "https://twitter.com/theatre_js"
           },
