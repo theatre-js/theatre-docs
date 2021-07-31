@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+https://clever-mestorf-4cc6db.netlify.com/* https://docs.theatrejs.com/:splat 301!
+https://docs.theaterjs.com/* https://docs.theatrejs.com/:splat 301!

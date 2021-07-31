@@ -1,0 +1,15 @@
+{
+  "description": "Documentation for Theatre.js",
+  "author": "AriaMinaei <aria.minaei@gmail.com>",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress": "^0.14.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
