@@ -10,6 +10,8 @@
     "vuepress": "^1.8.2"
   },
   "devDependencies": {
+    "@theatre/core": "^0.4.0-dev.13",
+    "@theatre/studio": "^0.4.0-dev.13",
     "prettier": "^2.3.2"
   }
 }
