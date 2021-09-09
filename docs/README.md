@@ -13,4 +13,3 @@ Theatre can be used both programmatically and visually:
 TODO (a simple gif)
 
 Theatre supports all frontend stacks. You can use it to animate DOM elements, THREE.js objects, or any JavaScript variable.
-

@@ -1,5 +1,7 @@
 // import both core and studio (we can remove studio from the production bundle later)
 // #region import
+// #region sheet
+// #region project
 import {getProject} from "@theatre/core"
 import studio from "@theatre/studio"
 
@@ -7,7 +9,10 @@ import studio from "@theatre/studio"
 studio.initialize()
 // #endregion import
 
-// create our first project
-const myProject = getProject("First project")
-// ... and our first sheet
-const sheet = myProject.sheet("First sheet", "")
+// create a project
+const project = getProject("First project")
+// #endregion project
+
+// create a sheet
+const sheet = project.sheet("First sheet")
+// #endregion sheet

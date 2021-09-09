@@ -19,3 +19,24 @@ This is the main way to create a project or access an existing one.
 * `@theatre/studio` is basically an editor for Project State.
 * A project's state is a JSON object.
 * You can manually tweak your project's state if you want to.
+
+## Sheets
+
+A Sheet is analogous to a component in React, or a composition in After Effects. It contains a number of objects, and together, they comprise a self-contained unit of animation.
+
+A [Project](#projects) can have multiple Sheets. Each Sheet could have multiple instances running at the same time.
+
+::: tip You cam create mutilple instances from a single Sheet
+
+Here is an example of 3 instances of the same sheet running at the same time. Each white box on the screen is attached to a different instance of the same sheet. They all have the same sequence of animation, but the animation runs for each of them independently.
+
+<VideoWithDescription src="/in-depth/multi-instance-preview.mp4">We have three copies of a white rectangle, and clicking on each makes it play an animation independently of the others. Two or more boxes may be playing the animation at the same time as well, with different progressions.</VideoWithDescription>
+:::
+
+::: details Why is it called a 'Sheet?'
+
+Conceptually, they're similar to 'sheets' in spreadsheets. A Sheet in Theatre contains **reactive values**, including animated sequences, or scripted values written in code. Also *(coming soon)* these values can be driven by formulas, scripts, and constraints.
+
+<VideoWithDescription src="/in-depth/spreadsheet.mp4">A screen recording of using a spreadsheet to assign values to two cells, and have the third cell's value be a formula using the first two cells' values.</VideoWithDescription>
+
+:::
