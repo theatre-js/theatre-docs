@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "examples": "parcel docs/examples.html"
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "parcel-bundler": "^1.12.5",
     "vuepress": "^1.8.2"
   },
   "devDependencies": {
