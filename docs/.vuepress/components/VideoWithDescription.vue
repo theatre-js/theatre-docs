@@ -4,7 +4,7 @@ Example:
  -->
 <template>
   <div>
-    <video width="100%" controls v-bind:src="src" v-bind:aria-describedby="descriptorId"/>
+    <video width="100%" controls v-bind:src="src" v-bind:aria-describedby="descriptorId" v-bind:autoplay="autoplay" />
     <div v-bind:id="descriptorId" style="display: none;" aria-hidden="true">
       <slot/>
     </div>
@@ -15,7 +15,8 @@ Example:
 import Vue from "vue";
 export default Vue.extend({
   props: {
-    src: String
+    src: String,
+    autoplay: {type: String, default: ""},
   },
   computed: {
     descriptorId() {

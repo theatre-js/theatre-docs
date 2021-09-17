@@ -7,11 +7,11 @@ module.exports = {
     nav: [
       {
         text: "Guide",
-        link: "/",
+        link: "/getting-started/",
       },
       {
-        text: "API",
-        link: "/api.html",
+        text: "In Depth",
+        link: "/in-depth/",
       },
       {
         text: "Older versions",
