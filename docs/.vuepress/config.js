@@ -43,7 +43,7 @@ module.exports = {
           },
           {
             text: "Twitter",
-            link: "https://twitter.com/theatre_js",
+            link: "https://twitter.com/ariaminaei",
           },
           {
             text: "Email",
@@ -52,7 +52,7 @@ module.exports = {
         ],
       },
     ],
-    sidebarDepth: 2,
+    sidebarDepth: 1,
     sidebar: ["/", "/getting-started/", "/in-depth/"],
     displayAllHeaders: true,
     // sidebar: [],
