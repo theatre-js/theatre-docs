@@ -8,7 +8,7 @@ title: Getting Started
 
 This guide is a work in progress. In the meantime, we've recorded a video tutorial that should quickly get you started with Theatre.js
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Click here if the video is not visible](https://www.youtube.com/watch?v=icR9EIS1q34)
 
@@ -20,7 +20,7 @@ Theatre comes as npm packages, so we need a module [bundler](https://github.com/
 
 ::: details See this step in the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=539" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=539" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
@@ -73,7 +73,7 @@ Next, we'll set up an Object, a Sheet, and a Project.
 
 ::: details See this step in the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=632" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=632" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
@@ -109,7 +109,7 @@ By now we should be able to see our project and sheet and object show up in the 
 
 ::: details Learn this step from the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=898" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=898" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
@@ -123,7 +123,7 @@ If you change these values in the UI, and then read `object.value` again, you wi
 
 ::: details Learn this step from the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=931" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=931" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
@@ -138,7 +138,7 @@ There are a few ways to listen to changes in values. The easiest method `object.
 
 ::: details Learn this step from the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=979" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=979" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
@@ -151,7 +151,7 @@ The `object.onValuesChange()` method allows us to connect our `Object`s to visua
 
 ::: details Learn this step from the video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=1072" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/icR9EIS1q34?start=1072" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::
 
