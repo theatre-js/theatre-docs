@@ -2,11 +2,11 @@
 
 ## Projects
 
-A Theatre `Project` is like a save file that holds all the animations and tweaks made in `@theatre/studio`. It is ultimately consumed by `@theatre/core` to run those animations and tweaks.
+A Theatre project is like a save file that holds all the animations and tweaks that you design in `@theatre/studio`. It is ultimately consumed by `@theatre/core` to run those animations and tweaks.
 
-* All your work in Theatre is organized into `Project`s.
-* A Theatre `Project` is similar to a project in After Effects, Figma, and other tools – it is a way to organize related work.
-* You can create multiple `Project`s in a single web page, but often one `Project` is sufficient for a whole website.
+* All your work in Theatre is organized into projects.
+* A Theatre project is similar to a project in After Effects, Figma, and other tools – it is a way to organize related work.
+* You can create multiple projects in a single web page, but often one project is sufficient for a whole website.
 
 ### `core.getProject()`
 
@@ -20,54 +20,83 @@ Learn how to export/import projects, and save them to a repository. Currently ex
 
 ### Project state
 
-The Project's state is the actual save file holding the data of your project.
+The project's state is the actual save file holding the data of your project.
 
 * All of the tweaks and animations that you create with Theatre are considered the project's state.
-* `@theatre/core` uses Project State to run your tweaks and animations.
-* `@theatre/studio` is basically an editor for Project State.
+* `@theatre/core` uses project state to run your tweaks and animations.
+* `@theatre/studio` is basically an editor for project state.
 * A project's state is a JSON object.
 * You can manually tweak your project's state if you want to. That's explained [in the video tutorial](https://youtu.be/icR9EIS1q34?t=1734).
 
 ## Sheets
 
-A Sheet is analogous to a component in React, or a composition in After Effects. It contains a number of [Objects](#objects), and together, they comprise a self-contained unit of animation.
+A sheet is analogous to a component in React, or a composition in After Effects. It contains a number of [Objects](#objects), and together, they comprise a self-contained unit of animation.
 
-A [Project](#projects) can have multiple Sheets. Each Sheet could have multiple instances running at the same time.
+A [project](#projects) can have multiple sheets. Each sheet could have multiple instances running at the same time.
 
-::: details You can create mutilple instances from a single Sheet
+::: details You can create mutilple instances from a single sheet
 
 Here is an example of 3 instances of the same sheet running at the same time. Each white box on the screen is attached to a different instance of the same sheet. They all have the same sequence of animation, but the animation runs for each of them independently.
 
 <VideoWithDescription src="/in-depth/multi-instance-preview.mp4">We have three copies of a white rectangle, and clicking on each makes it play an animation independently of the others. Two or more boxes may be playing the animation at the same time as well, with different progressions.</VideoWithDescription>
 
-The video tutorial has [a section](https://youtu.be/icR9EIS1q34?t=3343) on multiple Sheet instances.
+The video tutorial has [a section](https://youtu.be/icR9EIS1q34?t=3343) on multiple sheet instances.
 :::
 
-::: details Why is it called a 'Sheet?'
+::: details Why is it called a 'sheet?'
 
-Conceptually, they're similar to 'sheets' in spreadsheets. A Sheet in Theatre contains **reactive values**, including animated sequences, or scripted values written in code. Also *(coming soon)* these values can be driven by formulas, scripts, and constraints.
+Conceptually, they're similar to 'sheets' in spreadsheets. A sheet in Theatre contains **reactive values**, including animated sequences, or scripted values written in code. Also *(coming soon)* these values can be driven by formulas, scripts, and constraints.
 
 <VideoWithDescription src="/in-depth/spreadsheet.mp4">A screen recording of using a spreadsheet to assign values to two cells, and have the third cell's value be a formula using the first two cells' values.</VideoWithDescription>
 
 :::
 
+## Sequences
+
+Each [sheet](#sheets) has a single sequence <sup>[(multi-sequence sheets are coming)](#multi-sequence-sheets)</sup>. The sequence can be played or manually scrubbed in order to create time-driven animations, parallax effects, or more.
+
+### Multi-sequence sheets
+
+As of Theatre.js 0.4, each [sheet](#sheets) has a single sequence. We plan to support multiple sequences in the future. Until then, you can divide your sequence into multiple time ranges to simulate multiple sequences.
+
+## Sound and Music
+
+You can attach audio tracks to sequences using `sequence.attachAudio()`. Theatre will then play the audio track every time the sequence is played with the timings in sync.
+  
+<<< @/docs/in-depth/Sequences/attachAudio.ts#simple
+
+In the above example, Theatre will:
+1. [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) the audio file.
+2. Create a [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) contex.
+  
+     👉 _If the browser is [blocking](https://developer.chrome.com/blog/autoplay/#webaudio) the audio context, Theatre will wait for a user gesture (eg. a click/touch/keydown) to initiate it. It's best to prompt the user to initiate audio playback by, for example, showing a `<button>Start</button>`. Once the user clicks on that button (or anywhere else), Theatre will initiate the audio context._
+
+3. [Decode](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData) the audio.
+4. Resolve the returned Promise. After this, when you call `sequence.play()`, the audio track will play simultaneously and in sync.
+
+If you would like to have more control over loading or the audio setup, you could provide your own audio graph:
+
+<<< @/docs/in-depth/Sequences/attachAudio.ts#advanced
+
+
+
 ## Objects
 
 Objects in Theatre are usually made to represent actual visual elements on the screen, such as a `<div>`, or a THREE.js `Object3D`.
 
-* Calling `sheet.object("box", {prop1: 0})` returns an Object with:
+* Calling `sheet.object("box", {prop1: 0})` returns an object with:
   *  a `key` of `"box"`
   *  a single prop called `prop1`
      *  whose type is a number (ie. cannot be a string or boolean, etc.)
      *  whose default value is `0`.
 
-### Reading the values of Objects
+### Reading the values of objects
 
-There are multiple ways to read the values of an Object
+There are multiple ways to read the values of an object
 
 #### Static reads
 
-You can read the _latest_ value of an Object through `obj.value`:
+You can read the _latest_ value of an object through `obj.value`:
 
 ```ts
 const obj = sheet.object("box", {x: 0})
@@ -96,7 +125,7 @@ If you wish to listen to only a certain set of values changing, you can use `obj
 
 ## Prop types
 
-Each Object has one or more props (just like a React component). Once you define your props, you can start tweaking them in the studio.
+Each object has one or more props (just like a React component). Once you define your props, you can start tweaking them in the studio.
 
 Read more about props the [getting started guide](/getting-started/#create-an-object) or see how to use them in the [video tutorial](https://youtu.be/icR9EIS1q34?t=1942).
 
