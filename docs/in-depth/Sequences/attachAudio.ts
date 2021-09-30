@@ -23,6 +23,7 @@ sheet.sequence
     audioContext,
     destinationNode,
   })
+  // this promise resolves immediately as everything is already provided
   .then(() => {
     sequence.play()
   })

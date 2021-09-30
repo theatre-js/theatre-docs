@@ -55,9 +55,50 @@ Conceptually, they're similar to 'sheets' in spreadsheets. A sheet in Theatre co
 
 Each [sheet](#sheets) has a single sequence <sup>[(multi-sequence sheets are coming)](#multi-sequence-sheets)</sup>. The sequence can be played or manually scrubbed in order to create time-driven animations, parallax effects, or more.
 
-### Multi-sequence sheets
+### Accessing the sequence
+
+```ts
+const sequence = sheet.sequence
+```
+
+### `sequence.position`
+
+Each sequence has a `position` property that determines the amount of progress through the animation.
+
+* If your sequence is time-based, then you can consider `position` to be in the unit of seconds. So, `position=60` would mean `1` minute of progression through the sequence.
+* If your sequence is controlled by a dimension other than time (such as parallax effects), then the unit of `position` is determined by you. From Theatre's perspective, `sequence.position` is unit-less.
+
+Usage:
+
+<<< @/docs/in-depth/Sequences/examples.ts#position
+
+### `sequence.play()`
+
+This method is used in time-based sequences. It basically plays the sequence.
+
+<<< @/docs/in-depth/Sequences/examples.ts#play-basic
+
+The playback is customizable:
+
+<<< @/docs/in-depth/Sequences/examples.ts#play-custom
+
+### `sequence.pause()`
+
+The counterpart to [`sequence.play()`](#sequence-play). It won't have an effect if no playback is running.
+
+<<< @/docs/in-depth/Sequences/examples.ts#pause
+
+### `sequence.attachAudio()`
+
+Attaches an audio track to the sequence. Read more in [Sound and Music](#sound-and-music).
+
+::: details Multi-sequence sheets
 
 As of Theatre.js 0.4, each [sheet](#sheets) has a single sequence. We plan to support multiple sequences in the future. Until then, you can divide your sequence into multiple time ranges to simulate multiple sequences.
+
+If your use-case requires multiple sequences, [let us know in the Discord server](https://discord.gg/bm9f8F9Y9N) or [open an issue](https://github.com/AriaMinaei/theatre/issues/new) so we can prioritize it.
+
+:::
 
 ## Sound and Music
 

@@ -52,7 +52,7 @@ module.exports = {
         ],
       },
     ],
-    sidebarDepth: 1,
+    sidebarDepth: 2,
     sidebar: ["/", "/getting-started/", "/in-depth/", "/r3f/"],
     displayAllHeaders: true,
     // sidebar: [],
