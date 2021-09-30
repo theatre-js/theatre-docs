@@ -92,13 +92,17 @@ The counterpart to [`sequence.play()`](#sequence-play). It won't have an effect 
 
 Attaches an audio track to the sequence. Read more in [Sound and Music](#sound-and-music).
 
-::: details Multi-sequence sheets
+### Planned features
+
+#### Multi-sequence sheets
 
 As of Theatre.js 0.4, each [sheet](#sheets) has a single sequence. We plan to support multiple sequences in the future. Until then, you can divide your sequence into multiple time ranges to simulate multiple sequences.
 
 If your use-case requires multiple sequences, [let us know in the Discord server](https://discord.gg/bm9f8F9Y9N) or [open an issue](https://github.com/AriaMinaei/theatre/issues/new) so we can prioritize it.
 
-:::
+#### Listening to playback state changes
+
+We're working on exposing the playback state through events. Feel free to [chime in](https://github.com/AriaMinaei/theatre/issues/20) on this feature.
 
 ## Sound and Music
 
