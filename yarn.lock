@@ -1038,26 +1038,26 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@theatre/core@0.4.0-dev.20":
-  version "0.4.0-dev.20"
-  resolved "https://registry.yarnpkg.com/@theatre/core/-/core-0.4.0-dev.20.tgz#60cd21d0a62216ed909eb43dcb9d137bfba440fa"
-  integrity sha512-jRhxUGAT1l2fmFwgTCRDTss73N25pekTUK1L1/2kuEMtm00hQnUgJRTh65rvZLL44hx8gThEoeNCqNHtvmWLAQ==
+"@theatre/core@0.4.5-dev.1":
+  version "0.4.5-dev.1"
+  resolved "https://registry.yarnpkg.com/@theatre/core/-/core-0.4.5-dev.1.tgz#dd1d9e7255e841c362281115d0c66cec2adcce28"
+  integrity sha512-6rDOn+dryZAIn0/nBVXxjvmoVtuPkP66/ZMqTXyyTSS61EKB55JDTkLXrBx2VEZ7uhkxq7idwhOk7S/eBa6QhA==
   dependencies:
-    "@theatre/dataverse" "0.4.0-dev.20"
+    "@theatre/dataverse" "0.4.5-dev.1"
 
-"@theatre/dataverse@0.4.0-dev.20":
-  version "0.4.0-dev.20"
-  resolved "https://registry.yarnpkg.com/@theatre/dataverse/-/dataverse-0.4.0-dev.20.tgz#8c1f2293afc65af4a97e1b8c1d5c36d483b9f753"
-  integrity sha512-P5N1WYiii6+hkOPjhQDRmYl09UgrI0/fN23YP5Ops6VO/d/OOcGHBJLUdnTZcpDkHNHrrp5FBMG5ygKLClCtHg==
+"@theatre/dataverse@0.4.5-dev.1":
+  version "0.4.5-dev.1"
+  resolved "https://registry.yarnpkg.com/@theatre/dataverse/-/dataverse-0.4.5-dev.1.tgz#b518a7ede682189688270e515baaa61e1e28e514"
+  integrity sha512-gasECuxeO/44DS2+bQ/wHK40KYpHjnQcQ/zuqeHKP3413oBhR2TYEo23BejH0E+PUSRYkTEl1bpSG6N8xtE/Cw==
   dependencies:
     lodash-es "^4.17.21"
 
-"@theatre/studio@0.4.0-dev.20":
-  version "0.4.0-dev.20"
-  resolved "https://registry.yarnpkg.com/@theatre/studio/-/studio-0.4.0-dev.20.tgz#523aba4f8ca8b38b0d5011743bb8645e5d11028e"
-  integrity sha512-6heOUXA9W+OR8RY05PV5SM/rCzU/akTGdcLL/HMWf83ATbEzRM9ktUQ1GG9CYE7HYOjQFNSZ4F8KQfeHfbvTFA==
+"@theatre/studio@0.4.5-dev.1":
+  version "0.4.5-dev.1"
+  resolved "https://registry.yarnpkg.com/@theatre/studio/-/studio-0.4.5-dev.1.tgz#62efdb1d3c9070b45b0ac4ee408a9ce586e18934"
+  integrity sha512-oQaYhNrHRWKKWfmAAGZlDWWPNhx0bPUb6l2ktb2H2abpWZtv+vynP1xigDcl7IBJh8iLQHBLr5BFNJEoGT8wmg==
   dependencies:
-    "@theatre/dataverse" "0.4.0-dev.20"
+    "@theatre/dataverse" "0.4.5-dev.1"
     react "^17.0.2"
     react-dom "^17.0.2"
     styled-components "^5.3.0"

@@ -119,10 +119,13 @@ In the above example, Theatre will:
 3. [Decode](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData) the audio.
 4. Resolve the returned Promise. After this, when you call `sequence.play()`, the audio track will play simultaneously and in sync.
 
-If you would like to have more control over loading or the audio setup, you could provide your own audio graph:
+If you would like to have more control over loading or the audio setup, you could provide your own audio graph.
 
-<<< @/docs/in-depth/Sequences/attachAudio.ts#advanced
+<<< @/docs/in-depth/Sequences/attachAudio.ts#provide-graph
 
+Or you re-use the sequence's audio graph.
+
+<<< @/docs/in-depth/Sequences/attachAudio.ts#reuse-graph
 
 
 ## Objects
