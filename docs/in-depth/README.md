@@ -258,7 +258,7 @@ Read more about props the [getting started guide](/getting-started/#create-an-ob
 
 ## Extensions
 
-Theatre can be extended to fit different workflows and tech stacks. Docs on how to build extensions will come soon. In the meantime, check the source code of [`@theatre/r3f`](https://github.com/AriaMinaei/theatre/tree/main/packages/r3f), which is an extension for [React Three Fiber](https://github.com/pmndrs/react-three-fiber).
+Read about extensions [here](../extensions/README.md).
 
 ### Working with Selections
 
@@ -274,9 +274,9 @@ TODO
 
 TODO
 
-## API
+## Editor intellisense
 
-The libraries come bundled with typescript definitions with [TSDoc](https://tsdoc.org) comments. You can explore the API if your editor is configured to display TSDoc comments.
+The libraries come bundled with typescript definitions with [TSDoc](https://tsdoc.org) comments, so whether you're using JavaScript or TypeScript, you should be able to use autocomplete and API comments. If you're using JavaScript, consider adding some [JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) comments here and there to further enhance the editing experience.
 
 
 <VideoWithDescription src="/in-depth/tsdoc.mp4">A screen recording showing the API documentation displayed in a code editor.</VideoWithDescription>

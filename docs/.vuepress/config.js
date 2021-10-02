@@ -14,6 +14,24 @@ module.exports = {
         link: "/in-depth/",
       },
       {
+        text: "Extensions",
+        link: "/extensions/",
+        items: [
+          {
+            text: "Creating extensions",
+            link: "/extensions/creating-your-own-extension/",
+          },
+          {
+            text: "Extension: React THREE Fiber",
+            link: "/extensions/r3f/",
+          },
+        ],
+      },
+      {
+        text: "API",
+        link: "/api/",
+      },
+      {
         text: "Older versions",
         items: [
           {
@@ -53,11 +71,9 @@ module.exports = {
       },
     ],
     sidebarDepth: 2,
-    sidebar: ["/", "/getting-started/", "/in-depth/", "/r3f/"],
     displayAllHeaders: true,
-    // sidebar: [],
+    sidebar: {"/": "auto"},
     lastUpdated: "Last Updated",
-
     repo: "ariaminaei/theatre",
     docsRepo: "ariaminaei/theatre-docs",
     docsDir: "docs",
