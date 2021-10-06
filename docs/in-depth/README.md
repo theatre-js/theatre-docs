@@ -260,29 +260,13 @@ Read more about props the [getting started guide](/getting-started/#create-an-ob
 
 Read about extensions [here](../extensions/README.md).
 
-### Working with Selections
-
-You can read/set the current selection in the outline panel using `studio.selection*` APIs.
-
-TODO
-
-### Contributing to the toolbar
-
-TODO
-
-### Custom panes
-
-TODO
-
 ## Editor intellisense
 
 The libraries come bundled with typescript definitions with [TSDoc](https://tsdoc.org) comments, so whether you're using JavaScript or TypeScript, you should be able to use autocomplete and API comments. If you're using JavaScript, consider adding some [JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) comments here and there to further enhance the editing experience.
 
-
 <VideoWithDescription src="/in-depth/tsdoc.mp4">A screen recording showing the API documentation displayed in a code editor.</VideoWithDescription>
 
 <sub>Note that Typescript is not required to use Theatre.js or see its API docs.</sub>
-
 
 ---
 
