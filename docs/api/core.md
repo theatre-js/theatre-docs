@@ -10,6 +10,7 @@
 |  --- | --- |
 |  [getProject(id, config)](./core.getproject.md) | Returns a project of the given id, or creates one if it doesn't already exist. |
 |  [onChange(pointer, callback)](./core.onchange.md) | Calls <code>callback</code> every time the pointed value of <code>pointer</code> changes. |
+|  [val(pointer)](./core.val.md) | Takes a Pointer and returns the value it points to. |
 
 ## Interfaces
 

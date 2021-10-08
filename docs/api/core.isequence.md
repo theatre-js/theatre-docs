@@ -14,6 +14,7 @@ export interface ISequence
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [pointer](./core.isequence.pointer.md) | [Pointer](./dataverse.pointer.md)<!-- -->&lt;{ playing: boolean; length: number; position: number; }&gt; | A Pointer to the sequence's inner state. |
 |  [position](./core.isequence.position.md) | number | The current position of the playhead. In a time-based sequence, this represents the current time in seconds. |
 |  [type](./core.isequence.type.md) | 'Theatre\_Sequence\_PublicAPI' |  |
 
