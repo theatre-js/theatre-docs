@@ -16,7 +16,7 @@ This is the main way to create a project or access an existing one.
 
 ### Exporting
 
-Learn how to export/import projects, and save them to a repository. Currently explained in the [video tutorial](https://youtu.be/icR9EIS1q34?t=1383).
+Learn how to export/import projects, and save them to a repository. Currently the state of your project is stored in the localStorage key "theatre-0.4.persistent" which you can access programatically with `localStorage.getItem("theatre-0.4.persistent")`. Also explained in the [video tutorial](https://youtu.be/icR9EIS1q34?t=1383). 
 
 ### Project state
 
