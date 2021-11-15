@@ -25,8 +25,8 @@ Theatre comes as npm packages, so we need a module [bundler](https://github.com/
 :::
 
 Theatre comes in two packages: 
-* [`@theatre/core`](https://npmjs.com/package/@theatre/core), the core animation library 
-* [`@theatre/studio`](https://npmjs.com/package/@theatre/studio), the visual editor.
+* [`@theatre/core`](https://npmjs.com/package/@theatre/core), the core animation library. Licensed under the Apache 2.0 license. 
+* [`@theatre/studio`](https://npmjs.com/package/@theatre/studio), the visual editor. Licensed under the [AGPLv3](https://github.com/AriaMinaei/theatre/blob/main/theatre/studio/LICENSE). 
 
 Let's add `@theatre/core` as a dependency.
 
