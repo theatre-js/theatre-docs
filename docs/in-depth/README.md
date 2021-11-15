@@ -244,10 +244,10 @@ Read more about props the [getting started guide](/getting-started/#create-an-ob
 
   * **Strings**
 
-    TODO
+    TODO, for now see the following [PR](https://github.com/AriaMinaei/theatre/pull/48)
   * **Booleans**
 
-    TODO
+    TODO, for now see the following [PR](https://github.com/AriaMinaei/theatre/pull/48)
   * **Compounds**
 
     TODO
@@ -270,5 +270,5 @@ The libraries come bundled with typescript definitions with [TSDoc](https://tsdo
 
 ---
 
-This documentation is a work in progress. In the meantime, check [the video tutorial](https://www.youtube.com/watch) which covers much of Theatre.js.
+This documentation is a work in progress. In the meantime, check [the video tutorial](https://www.youtube.com/watch?v=icR9EIS1q34) which covers much of Theatre.js.
 
