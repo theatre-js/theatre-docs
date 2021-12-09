@@ -27,7 +27,7 @@ export declare function getProject(id: string, config?: IProjectConfig): IProjec
 
 If @<!-- -->theatre/studio is also loaded, then the state of the project will be managed by the studio.
 
-\[Learn more about exporting\](https://docs.theatrejs.com/in-depth/\#exporting)
+[Learn more about exporting](https://docs.theatrejs.com/in-depth/\#exporting)
 
 ## Example 1
 
