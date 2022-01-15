@@ -26,7 +26,7 @@ const sheet = proj.sheet(
 // #region object
 // create an object
 const obj = sheet.object(
-  // The object's key is "Fist object"
+  // The object's key is "First object"
   "First object",
   // These are the object's default values (and as we'll later learn, its props types)
   {
