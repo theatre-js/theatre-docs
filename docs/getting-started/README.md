@@ -97,7 +97,7 @@ We can learn more about Sheets [later](/in-depth/#sheets). For now, let's move o
 
 ### Create an Object
 
-Let's create an [Object](/in-depth/#object) and call it `"First object"`.
+Let's create an [Object](/in-depth/#objects) and call it `"First object"`.
 
 <<< @/docs/getting-started/imp1.ts#object
 
