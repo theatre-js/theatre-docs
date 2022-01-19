@@ -9,7 +9,11 @@ A string prop type
 <b>Signature:</b>
 
 ```typescript
-string: (defaultValue: string, opts?: PropTypeConfigOpts | undefined) => PropTypeConfig_String
+string: (defaultValue: string, opts?: {
+    label?: string | undefined;
+    sanitize?: Sanitizer<string> | undefined;
+    interpolate?: Interpolator<string> | undefined;
+} | undefined) => PropTypeConfig_String
 ```
 
 ## Example

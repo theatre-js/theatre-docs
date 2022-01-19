@@ -4,6 +4,8 @@
 
 ## Atom.getState() method
 
+Gets the current state of the atom.
+
 <b>Signature:</b>
 
 ```typescript

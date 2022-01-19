@@ -4,6 +4,8 @@
 
 ## IDerivation.tapImmediate() method
 
+Convenience method that taps (subscribes to) the derivation using `this.changes(ticker).tap(fn)` and immediately calls the callback with the current value.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,8 +16,8 @@ tapImmediate(ticker: Ticker, fn: (cb: V) => void): VoidFn;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ticker | Ticker |  |
-|  fn | (cb: V) =&gt; void |  |
+|  ticker | Ticker | The ticker to use for batching. |
+|  fn | (cb: V) =&gt; void | The callback to call on update. |
 
 <b>Returns:</b>
 

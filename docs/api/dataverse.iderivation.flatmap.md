@@ -4,6 +4,8 @@
 
 ## IDerivation.flatMap() method
 
+Same as [IDerivation.map()](./dataverse.iderivation.map.md)<!-- -->, but the mapping function can also return a derivation, in which case the derivation returned by `flatMap` takes the value of that derivation.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,9 +16,15 @@ flatMap<R>(fn: (v: V) => R): IDerivation<R extends IDerivation<infer T> ? T : R>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | (v: V) =&gt; R |  |
+|  fn | (v: V) =&gt; R | The mapping function to use. Note: it accepts a plain value, not a derivation. |
 
 <b>Returns:</b>
 
 [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;R extends [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;infer T&gt; ? T : R&gt;
+
+## Example
+
+// Simply using `map()` here would return the inner derivation when we call `getValue()` new Box(3).derivation.map((value) =<!-- -->&gt; new Box(value).derivation).getValue()
+
+// Using `flatMap()` eliminates the inner derivation new Box(3).derivation.flatMap((value) =<!-- -->&gt; new Box(value).derivation).getValue()
 

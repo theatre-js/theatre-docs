@@ -4,49 +4,51 @@
 
 ## dataverse package
 
+The animation-optimized FRP library powering the internals of Theatre.js.
+
 ## Classes
 
 |  Class | Description |
 |  --- | --- |
-|  [AbstractDerivation](./dataverse.abstractderivation.md) |  |
-|  [Atom](./dataverse.atom.md) |  |
-|  [Box](./dataverse.box.md) |  |
-|  [ConstantDerivation](./dataverse.constantderivation.md) |  |
-|  [DerivationFromSource](./dataverse.derivationfromsource.md) |  |
-|  [PointerProxy](./dataverse.pointerproxy.md) |  |
-|  [Ticker](./dataverse.ticker.md) |  |
+|  [AbstractDerivation](./dataverse.abstractderivation.md) | Represents a derivation whose changes can be tracked. To be used as the base class for all derivations. |
+|  [Atom](./dataverse.atom.md) | Wraps an object whose (sub)properties can be individually tracked. |
+|  [Box](./dataverse.box.md) | Wraps a single value. |
+|  [ConstantDerivation](./dataverse.constantderivation.md) | A derivation whose value never changes. |
+|  [DerivationFromSource](./dataverse.derivationfromsource.md) | Represents a derivation based on a tappable (subscribable) data source. |
+|  [PointerProxy](./dataverse.pointerproxy.md) | Allows creating pointer-derivations where the pointer can be switched out. |
+|  [Ticker](./dataverse.ticker.md) | The Ticker class helps schedule callbacks. Scheduled callbacks are executed per tick. Ticks can be triggered by an external scheduling strategy, e.g. a raf. |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [isDerivation(d)](./dataverse.isderivation.md) |  |
+|  [isDerivation(d)](./dataverse.isderivation.md) | Returns whether <code>d</code> is a derivation. |
 |  [iterateAndCountTicks(pointerOrDerivation)](./dataverse.iterateandcountticks.md) |  |
 |  [iterateOver(pointerOrDerivation)](./dataverse.iterateover.md) |  |
-|  [pointer({ root, path, })](./dataverse.pointer.md) |  |
+|  [pointer(args)](./dataverse.pointer.md) | Creates a pointer to a (nested) property of an [Atom](./dataverse.atom.md)<!-- -->. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [IBox](./dataverse.ibox.md) |  |
-|  [IdentityDerivationProvider](./dataverse.identityderivationprovider.md) |  |
-|  [IDerivation](./dataverse.iderivation.md) |  |
+|  [IBox](./dataverse.ibox.md) | Common interface for Box types. Boxes wrap a single value. |
+|  [IdentityDerivationProvider](./dataverse.identityderivationprovider.md) | Interface for objects that can provide a derivation at a certain path. |
+|  [IDerivation](./dataverse.iderivation.md) | Common interface for derivations. |
 
 ## Variables
 
 |  Variable | Description |
 |  --- | --- |
-|  [getPointerParts](./dataverse.getpointerparts.md) |  |
-|  [isPointer](./dataverse.ispointer.md) |  |
-|  [prism](./dataverse.prism.md) |  |
-|  [val](./dataverse.val.md) |  |
-|  [valueDerivation](./dataverse.valuederivation.md) |  |
+|  [getPointerParts](./dataverse.getpointerparts.md) | Returns the root object and the path of the pointer. |
+|  [isPointer](./dataverse.ispointer.md) | Returns whether <code>p</code> is a pointer. |
+|  [prism](./dataverse.prism.md) | Creates a derivation from the passed function that adds all derivations referenced in it as dependencies, and reruns the function when these change. |
+|  [val](./dataverse.val.md) | Convenience function that returns a plain value from its argument, whether it is a pointer, a derivation or a plain value itself. |
+|  [valueDerivation](./dataverse.valuederivation.md) | Returns a derivation of the value at the provided pointer. Derivations are cached per pointer. |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [Pointer](./dataverse.pointer.md) |  |
-|  [PointerType](./dataverse.pointertype.md) |  |
+|  [Pointer‎](./dataverse.pointer_.md) | The type of [Atom](./dataverse.atom.md) pointers. See [pointer()](./dataverse.pointer.md) for an explanation of pointers. |
+|  [PointerType](./dataverse.pointertype.md) | A wrapper type for the type a <code>Pointer</code> points to. |
 

@@ -4,6 +4,8 @@
 
 ## IDerivation.addDependent() method
 
+Add a derivation as a dependent of this derivation.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ addDependent(d: IDependent): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  d | IDependent |  |
+|  d | IDependent | The derivation to be made a dependent of this derivation. |
 
 <b>Returns:</b>
 

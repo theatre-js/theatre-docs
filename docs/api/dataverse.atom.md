@@ -4,6 +4,8 @@
 
 ## Atom class
 
+Wraps an object whose (sub)properties can be individually tracked.
+
 <b>Signature:</b>
 
 ```typescript
@@ -21,17 +23,16 @@ export default class Atom<State extends {}> implements IdentityDerivationProvide
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [$$isIdentityDerivationProvider](./dataverse.atom.__isidentityderivationprovider.md) |  | (not declared) |  |
-|  [pointer](./dataverse.atom.pointer.md) |  | [Pointer](./dataverse.pointer.md)<!-- -->&lt;State&gt; |  |
-|  [reduceState](./dataverse.atom.reducestate.md) |  | PathBasedReducer&lt;State, State&gt; |  |
+|  [pointer](./dataverse.atom.pointer.md) |  | Pointer&lt;State&gt; | Convenience property that gives you a pointer to the root of the atom. |
+|  [reduceState](./dataverse.atom.reducestate.md) |  | PathBasedReducer&lt;State, State&gt; | Creates a new state object from the current one, where the value at <code>path</code> is replaced by the return value of <code>reducer</code>, then sets it. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getIdentityDerivation(path)](./dataverse.atom.getidentityderivation.md) |  |  |
-|  [getIn(path)](./dataverse.atom.getin.md) |  |  |
-|  [getState()](./dataverse.atom.getstate.md) |  |  |
-|  [setIn(path, val)](./dataverse.atom.setin.md) |  |  |
-|  [setState(newState)](./dataverse.atom.setstate.md) |  |  |
+|  [getIdentityDerivation(path)](./dataverse.atom.getidentityderivation.md) |  | Returns a new derivation of the value at the provided path. |
+|  [getIn(path)](./dataverse.atom.getin.md) |  | Gets the state of the atom at <code>path</code>. |
+|  [getState()](./dataverse.atom.getstate.md) |  | Gets the current state of the atom. |
+|  [setIn(path, val)](./dataverse.atom.setin.md) |  | Sets the state of the atom at <code>path</code>. |
+|  [setState(newState)](./dataverse.atom.setstate.md) |  | Sets the state of the atom. |
 

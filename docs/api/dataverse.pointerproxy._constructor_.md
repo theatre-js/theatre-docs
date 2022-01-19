@@ -16,5 +16,5 @@ constructor(currentPointer: Pointer<O>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  currentPointer | [Pointer](./dataverse.pointer.md)<!-- -->&lt;O&gt; |  |
+|  currentPointer | Pointer&lt;O&gt; |  |
 

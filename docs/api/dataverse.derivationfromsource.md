@@ -4,6 +4,8 @@
 
 ## DerivationFromSource class
 
+Represents a derivation based on a tappable (subscribable) data source.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,13 +18,4 @@ export default class DerivationFromSource<V> extends AbstractDerivation<V>
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
 |  [(constructor)(\_tapToSource, \_getValueFromSource)](./dataverse.derivationfromsource._constructor_.md) |  | Constructs a new instance of the <code>DerivationFromSource</code> class |
-
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_becomeCold()](./dataverse.derivationfromsource._becomecold.md) |  |  |
-|  [\_keepHot()](./dataverse.derivationfromsource._keephot.md) |  |  |
-|  [\_reactToDependencyBecomingStale()](./dataverse.derivationfromsource._reacttodependencybecomingstale.md) |  |  |
-|  [\_recalculate()](./dataverse.derivationfromsource._recalculate.md) |  |  |
 

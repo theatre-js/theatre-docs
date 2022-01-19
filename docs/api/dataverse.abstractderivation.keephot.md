@@ -4,6 +4,8 @@
 
 ## AbstractDerivation.keepHot() method
 
+Keep the derivation hot, even if there are no tappers (subscribers).
+
 <b>Signature:</b>
 
 ```typescript

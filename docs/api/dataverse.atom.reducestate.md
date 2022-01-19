@@ -4,8 +4,24 @@
 
 ## Atom.reduceState property
 
+Creates a new state object from the current one, where the value at `path` is replaced by the return value of `reducer`<!-- -->, then sets it.
+
 <b>Signature:</b>
 
 ```typescript
 reduceState: PathBasedReducer<State, State>;
 ```
+
+## Remarks
+
+Doesn't mutate the old state, and preserves referential equality between values of the old state and the new state where possible.
+
+## Example
+
+
+```ts
+someAtom.getIn(['a']) // 1
+someAtom.reduceState(['a'], (state) => state + 1);
+someAtom.getIn(['a']) // 2
+```
+

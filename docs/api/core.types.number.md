@@ -9,11 +9,14 @@ A number prop type.
 <b>Signature:</b>
 
 ```typescript
-number: (defaultValue: number, opts?: ({
+number: (defaultValue: number, opts?: {
     nudgeFn?: NumberNudgeFn | undefined;
     range?: PropTypeConfig_Number['range'];
     nudgeMultiplier?: number | undefined;
-} & PropTypeConfigOpts) | undefined) => PropTypeConfig_Number
+    label?: string | undefined;
+    sanitize?: Sanitizer<number> | undefined;
+    interpolate?: Interpolator<number> | undefined;
+} | undefined) => PropTypeConfig_Number
 ```
 
 ## Example

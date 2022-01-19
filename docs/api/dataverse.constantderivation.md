@@ -4,6 +4,8 @@
 
 ## ConstantDerivation class
 
+A derivation whose value never changes.
+
 <b>Signature:</b>
 
 ```typescript
@@ -16,17 +18,4 @@ export default class ConstantDerivation<V> extends AbstractDerivation<V>
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
 |  [(constructor)(v)](./dataverse.constantderivation._constructor_.md) |  | Constructs a new instance of the <code>ConstantDerivation</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_v](./dataverse.constantderivation._v.md) |  | V |  |
-
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_reactToDependencyBecomingStale()](./dataverse.constantderivation._reacttodependencybecomingstale.md) |  |  |
-|  [\_recalculate()](./dataverse.constantderivation._recalculate.md) |  |  |
 

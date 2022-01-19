@@ -16,6 +16,6 @@ constructor(_tapToSource: (listener: (newValue: V) => void) => VoidFn, _getValue
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_tapToSource | (listener: (newValue: V) =&gt; void) =&gt; VoidFn |  |
-|  \_getValueFromSource | () =&gt; V |  |
+|  \_tapToSource | (listener: (newValue: V) =&gt; void) =&gt; VoidFn | A function that takes a listener and subscribes it to the underlying data source. |
+|  \_getValueFromSource | () =&gt; V | A function that returns the current value of the data source. |
 

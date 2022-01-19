@@ -7,53 +7,47 @@ module.exports = {
     nav: [
       {
         text: "Guide",
-        link: "/getting-started/",
-      },
-      {
-        text: "In Depth",
-        link: "/in-depth/",
-      },
-      {
-        text: "Extensions",
-        link: "/extensions/",
-        items: [
-          {
-            text: "Creating extensions",
-            link: "/extensions/creating-your-own-extension/",
-          },
-          {
-            text: "Extension: React THREE Fiber",
-            link: "/extensions/r3f/",
-          },
-        ],
+        link: "/guide/",
       },
       {
         text: "API",
         link: "/api/",
       },
       {
-        text: "Older versions",
+        text: "Tutorials",
+        link: "/tutorials/",
+      },
+      {
+        text: "Examples",
+        link: "/examples/",
+      },
+      {
+        text: "FAQ",
+        link: "/faq/",
+      },
+      {
+        text: "v0.4",
         items: [
           {
-            text: "0.4 (Current)",
+            text: "v0.4 (Current)",
             link: "https://docs.theatrejs.com",
           },
           {
-            text: "0.3",
+            text: "v0.3",
             link: "https://github.com/ariaminaei/theatre/tree/0.3",
           },
           {
-            text: "0.2",
+            text: "v0.2",
             link: "https://v02.docs.theatrejs.com/",
           },
           {
-            text: "0.1",
+            text: "v0.1",
             link: "https://github.com/ariaminaei/theatre/tree/0.1",
           },
         ],
       },
       {
-        text: "Get in touch",
+        text: "Community",
         items: [
           {
             text: "Discord community",
@@ -61,7 +55,7 @@ module.exports = {
           },
           {
             text: "Twitter",
-            link: "https://twitter.com/ariaminaei",
+            link: "https://twitter.com/theatre_js",
           },
           {
             text: "Email",
@@ -73,11 +67,20 @@ module.exports = {
     sidebarDepth: 2,
     displayAllHeaders: true,
     sidebar: {
-      "/gettin-started/": "auto",
-      "/in-depth/": "auto",
-      "/extensions/": "auto",
-      "/api/": "auto",
-      "": ["/getting-started/"],
+      "/guide/": [
+        {
+          title: "Guide",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            "",
+            "getting-started",
+            "concepts"
+          ],
+        }
+      ]
+      // "/api/",
+      // "/",
     },
     lastUpdated: "Last Updated",
     repo: "ariaminaei/theatre",

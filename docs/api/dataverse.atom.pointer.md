@@ -4,8 +4,15 @@
 
 ## Atom.pointer property
 
+Convenience property that gives you a pointer to the root of the atom.
+
 <b>Signature:</b>
 
 ```typescript
 readonly pointer: Pointer<State>;
 ```
+
+## Remarks
+
+Equivalent to `pointer({ root: thisAtom, path: [] })`<!-- -->.
+

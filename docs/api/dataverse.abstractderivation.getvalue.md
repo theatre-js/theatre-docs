@@ -4,6 +4,8 @@
 
 ## AbstractDerivation.getValue() method
 
+Gets the current value of the derivation. If the value is stale, it causes the derivation to freshen.
+
 <b>Signature:</b>
 
 ```typescript

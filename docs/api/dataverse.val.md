@@ -4,8 +4,15 @@
 
 ## val variable
 
+Convenience function that returns a plain value from its argument, whether it is a pointer, a derivation or a plain value itself.
+
 <b>Signature:</b>
 
 ```typescript
 val: <P>(pointerOrDerivationOrPlainValue: P) => P extends PointerType<infer T> ? T : P extends IDerivation<infer T_1> ? T_1 : P extends null | undefined ? P : unknown
 ```
+
+## Remarks
+
+For pointers, the value is returned by first creating a derivation, so it is reactive e.g. when used in a `prism`<!-- -->.
+

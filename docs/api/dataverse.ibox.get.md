@@ -4,6 +4,8 @@
 
 ## IBox.get() method
 
+Gets the value of the Box.
+
 <b>Signature:</b>
 
 ```typescript
@@ -12,4 +14,8 @@ get(): V;
 <b>Returns:</b>
 
 V
+
+## Remarks
+
+Usages of `get()` aren't tracked, they are only for retrieving the value. To track changes, you need to create a derivation.
 

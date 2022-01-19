@@ -7,11 +7,11 @@
 <b>Signature:</b>
 
 ```typescript
-export interface PropTypeConfig_Compound<Props extends IValidCompoundProps> extends IBasePropType<{
+export interface PropTypeConfig_Compound<Props extends IValidCompoundProps, PropTypes = Props> extends IBasePropType<{
     [K in keyof Props]: Props[K]['valueType'];
-}> 
+}, PropTypes> 
 ```
-<b>Extends:</b> IBasePropType&lt;{ \[K in keyof Props\]: Props\[K\]\['valueType'\]; }&gt;
+<b>Extends:</b> IBasePropType&lt;{ \[K in keyof Props\]: Props\[K\]\['valueType'\]; }, PropTypes&gt;
 
 ## Properties
 

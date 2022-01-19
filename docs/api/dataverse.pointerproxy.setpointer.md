@@ -4,6 +4,8 @@
 
 ## PointerProxy.setPointer() method
 
+Sets the underlying pointer.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ setPointer(p: Pointer<O>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  p | [Pointer](./dataverse.pointer.md)<!-- -->&lt;O&gt; |  |
+|  p | Pointer&lt;O&gt; | The pointer to be proxied. |
 
 <b>Returns:</b>
 

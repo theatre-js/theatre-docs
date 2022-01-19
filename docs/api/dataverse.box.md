@@ -4,12 +4,18 @@
 
 ## Box class
 
+Wraps a single value.
+
 <b>Signature:</b>
 
 ```typescript
 export default class Box<V> implements IBox<V> 
 ```
 <b>Implements:</b> [IBox](./dataverse.ibox.md)<!-- -->&lt;V&gt;
+
+## Remarks
+
+Derivations created with [Box.derivation](./dataverse.box.derivation.md) update based on strict equality (`===`<!-- -->) of the old value and the new one. This also means that property-changes of objects won't be tracked, and that for objects, updates will trigger on changes of reference even if the objects are structurally equal.
 
 ## Constructors
 
@@ -21,13 +27,12 @@ export default class Box<V> implements IBox<V>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_value](./dataverse.box._value.md) |  | V |  |
-|  [derivation](./dataverse.box.derivation.md) |  | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; |  |
+|  [derivation](./dataverse.box.derivation.md) |  | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; | Creates a derivation of the Box that you can use to track changes to it. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get()](./dataverse.box.get.md) |  |  |
-|  [set(v)](./dataverse.box.set.md) |  |  |
+|  [get()](./dataverse.box.get.md) |  | Gets the value of the Box.<!-- -->Note: usages of <code>get()</code> aren't tracked, they are only for retrieving the value. To track changes, you need to create a derivation. |
+|  [set(v)](./dataverse.box.set.md) |  | Sets the value of the Box. |
 

@@ -4,6 +4,8 @@
 
 ## IDerivation.isHot property
 
+Whether the derivation is hot.
+
 <b>Signature:</b>
 
 ```typescript

@@ -4,12 +4,18 @@
 
 ## PointerProxy class
 
+Allows creating pointer-derivations where the pointer can be switched out.
+
 <b>Signature:</b>
 
 ```typescript
 export default class PointerProxy<O extends {}> implements IdentityDerivationProvider 
 ```
 <b>Implements:</b> [IdentityDerivationProvider](./dataverse.identityderivationprovider.md)
+
+## Remarks
+
+This allows reacting not just to value changes at a certain pointer, but changes to the proxied pointer too.
 
 ## Constructors
 
@@ -21,13 +27,12 @@ export default class PointerProxy<O extends {}> implements IdentityDerivationPro
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [$$isIdentityDerivationProvider](./dataverse.pointerproxy.__isidentityderivationprovider.md) |  | (not declared) |  |
-|  [pointer](./dataverse.pointerproxy.pointer.md) |  | [Pointer](./dataverse.pointer.md)<!-- -->&lt;O&gt; |  |
+|  [pointer](./dataverse.pointerproxy.pointer.md) |  | Pointer&lt;O&gt; | Convenience pointer pointing to the root of this PointerProxy. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getIdentityDerivation(path)](./dataverse.pointerproxy.getidentityderivation.md) |  |  |
-|  [setPointer(p)](./dataverse.pointerproxy.setpointer.md) |  |  |
+|  [getIdentityDerivation(path)](./dataverse.pointerproxy.getidentityderivation.md) |  | Returns a derivation of the value at the provided sub-path of the proxied pointer. |
+|  [setPointer(p)](./dataverse.pointerproxy.setpointer.md) |  | Sets the underlying pointer. |
 

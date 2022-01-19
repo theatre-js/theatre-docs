@@ -9,7 +9,11 @@ A boolean prop type
 <b>Signature:</b>
 
 ```typescript
-boolean: (defaultValue: boolean, opts?: PropTypeConfigOpts | undefined) => PropTypeConfig_Boolean
+boolean: (defaultValue: boolean, opts?: {
+    label?: string | undefined;
+    sanitize?: Sanitizer<boolean> | undefined;
+    interpolate?: Interpolator<boolean> | undefined;
+} | undefined) => PropTypeConfig_Boolean
 ```
 
 ## Example

@@ -4,6 +4,8 @@
 
 ## IDerivation.removeDependent() method
 
+Remove a derivation as a dependent of this derivation.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ removeDependent(d: IDependent): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  d | IDependent |  |
+|  d | IDependent | The derivation to be removed from as a dependent of this derivation. |
 
 <b>Returns:</b>
 

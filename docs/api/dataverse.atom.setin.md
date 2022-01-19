@@ -4,6 +4,8 @@
 
 ## Atom.setIn() method
 
+Sets the state of the atom at `path`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript

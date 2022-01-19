@@ -4,6 +4,8 @@
 
 ## AbstractDerivation.isDerivation property
 
+Whether the object is a derivation.
+
 <b>Signature:</b>
 
 ```typescript

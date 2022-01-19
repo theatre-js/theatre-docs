@@ -4,6 +4,8 @@
 
 ## Ticker.time property
 
+The time at the start of the current tick if there is a tick in progress, otherwise defaults to `performance.now()`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript
