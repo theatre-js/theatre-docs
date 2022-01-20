@@ -16,11 +16,11 @@ This is the main way to create a project or access an existing one.
 
 ### Exporting
 
-Learn how to export/import projects, and save them to a repository. Currently explained in the [video tutorial](https://youtu.be/icR9EIS1q34?t=1383).
+Learn how to export/import projects, and save them to a repository. Currently the state of your project is stored in the localStorage key "theatre-<version without patch>.persistent" which you can access programatically with `localStorage.getItem("theatre-0.4.persistent")`. The state of all the project on the domain can then be found in `historic.innerState.coreByProject` as a map of project ids to project data. Also explained in the [video tutorial](https://youtu.be/icR9EIS1q34?t=1383). 
 
 ### Project state
 
-The project's state is the actual save file holding the data of your project.
+The project's state is the actual save file holding the data of your project. By copying the project state object and specifying it in the config during `getProject` you can load your project without needing for it to be in the user's localstorage already.
 
 * All of the tweaks and animations that you create with Theatre are considered the project's state.
 * `@theatre/core` uses project state to run your tweaks and animations.
@@ -244,10 +244,10 @@ Read more about props the [getting started guide](/getting-started/#create-an-ob
 
   * **Strings**
 
-    TODO
+    TODO, for now see the following [PR](https://github.com/AriaMinaei/theatre/pull/48)
   * **Booleans**
 
-    TODO
+    TODO, for now see the following [PR](https://github.com/AriaMinaei/theatre/pull/48)
   * **Compounds**
 
     TODO
@@ -270,5 +270,5 @@ The libraries come bundled with typescript definitions with [TSDoc](https://tsdo
 
 ---
 
-This documentation is a work in progress. In the meantime, check [the video tutorial](https://www.youtube.com/watch) which covers much of Theatre.js.
+This documentation is a work in progress. In the meantime, check [the video tutorial](https://www.youtube.com/watch?v=icR9EIS1q34) which covers much of Theatre.js.
 
