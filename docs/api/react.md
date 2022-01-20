@@ -4,6 +4,8 @@
 
 ## react package
 
+React bindings for dataverse.
+
 ## Functions
 
 |  Function | Description |

@@ -16,7 +16,8 @@ defaultValue: Extract<keyof Opts, string>,
 options: Opts, 
 opts?: {
     as?: 'menu' | 'switch';
-} & PropTypeConfigOpts): PropTypeConfig_StringLiteral<Extract<keyof Opts, string>>;
+    label?: string;
+}): PropTypeConfig_StringLiteral<Extract<keyof Opts, string>>;
 ```
 
 ## Parameters
@@ -25,7 +26,7 @@ opts?: {
 |  --- | --- | --- |
 |  defaultValue | Extract&lt;keyof Opts, string&gt; |  |
 |  options | Opts |  |
-|  opts | { as?: 'menu' \| 'switch'; } &amp; PropTypeConfigOpts |  |
+|  opts | { as?: 'menu' \| 'switch'; label?: string; } |  |
 
 <b>Returns:</b>
 

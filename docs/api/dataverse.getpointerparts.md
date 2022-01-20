@@ -4,6 +4,8 @@
 
 ## getPointerParts variable
 
+Returns the root object and the path of the pointer.
+
 <b>Signature:</b>
 
 ```typescript
@@ -12,3 +14,11 @@ getPointerParts: (p: Pointer<$IntentionalAny> | Pointer<{}> | Pointer<unknown>) 
     path: PathToProp;
 }
 ```
+
+## Example
+
+
+```ts
+const {root, path} = getPointerParts(pointer)
+```
+

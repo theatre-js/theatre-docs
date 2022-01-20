@@ -4,6 +4,8 @@
 
 ## prism variable
 
+Creates a derivation from the passed function that adds all derivations referenced in it as dependencies, and reruns the function when these change.
+
 <b>Signature:</b>
 
 ```typescript

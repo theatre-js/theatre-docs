@@ -4,6 +4,8 @@
 
 ## valueDerivation variable
 
+Returns a derivation of the value at the provided pointer. Derivations are cached per pointer.
+
 <b>Signature:</b>
 
 ```typescript

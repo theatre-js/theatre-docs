@@ -4,6 +4,8 @@
 
 ## IBox.derivation property
 
+Creates a derivation of the Box that you can use to track changes to it.
+
 <b>Signature:</b>
 
 ```typescript

@@ -16,7 +16,7 @@ onNextTick(fn: ICallback): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | ICallback |  |
+|  fn | ICallback | The function to be registered. |
 
 <b>Returns:</b>
 

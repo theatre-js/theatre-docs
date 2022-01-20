@@ -9,12 +9,13 @@ Constructs a new instance of the `Box` class
 <b>Signature:</b>
 
 ```typescript
-constructor(_value: V);
+constructor(
+    _value: V);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_value | V |  |
+|  \_value | V | The initial value of the Box. |
 

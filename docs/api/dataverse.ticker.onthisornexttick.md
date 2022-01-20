@@ -6,9 +6,9 @@
 
 Registers for fn to be called either on this tick or the next tick.
 
-If registerSideEffect() is called while Ticker.tick() is running, the side effect \_will\_ be called within the running tick. If you don't want this behavior, you can use registerSideEffectForNextTick().
+If `onThisOrNextTick()` is called while `Ticker.tick()` is running, the side effect \_will\_ be called within the running tick. If you don't want this behavior, you can use `onNextTick()`<!-- -->.
 
-Note that fn will be added to a Set(). Which means, if you call registerSideEffect(fn) with the same fn twice in a single tick, it'll only run once.
+Note that `fn` will be added to a `Set()`<!-- -->. Which means, if you call `onThisOrNextTick(fn)` with the same fn twice in a single tick, it'll only run once.
 
 <b>Signature:</b>
 
@@ -20,7 +20,7 @@ onThisOrNextTick(fn: ICallback): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | ICallback |  |
+|  fn | ICallback | The function to be registered. |
 
 <b>Returns:</b>
 

@@ -4,6 +4,8 @@
 
 ## Ticker.offNextTick() method
 
+De-registers a fn to be called on the next tick.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ offNextTick(fn: ICallback): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | ICallback |  |
+|  fn | ICallback | The function to be de-registered. |
 
 <b>Returns:</b>
 

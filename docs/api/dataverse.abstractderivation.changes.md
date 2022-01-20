@@ -4,6 +4,8 @@
 
 ## AbstractDerivation.changes() method
 
+Returns a `Tappable` of the changes of this derivation.
+
 <b>Signature:</b>
 
 ```typescript

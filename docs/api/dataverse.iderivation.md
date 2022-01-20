@@ -4,6 +4,8 @@
 
 ## IDerivation interface
 
+Common interface for derivations.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,20 +16,20 @@ export interface IDerivation<V>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [isDerivation](./dataverse.iderivation.isderivation.md) | true |  |
-|  [isHot](./dataverse.iderivation.ishot.md) | boolean |  |
+|  [isDerivation](./dataverse.iderivation.isderivation.md) | true | Whether the object is a derivation. |
+|  [isHot](./dataverse.iderivation.ishot.md) | boolean | Whether the derivation is hot. |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [addDependent(d)](./dataverse.iderivation.adddependent.md) |  |
-|  [changes(ticker)](./dataverse.iderivation.changes.md) |  |
-|  [changesWithoutValues()](./dataverse.iderivation.changeswithoutvalues.md) |  |
-|  [flatMap(fn)](./dataverse.iderivation.flatmap.md) |  |
-|  [getValue()](./dataverse.iderivation.getvalue.md) |  |
-|  [keepHot()](./dataverse.iderivation.keephot.md) |  |
-|  [map(fn)](./dataverse.iderivation.map.md) |  |
-|  [removeDependent(d)](./dataverse.iderivation.removedependent.md) |  |
-|  [tapImmediate(ticker, fn)](./dataverse.iderivation.tapimmediate.md) |  |
+|  [addDependent(d)](./dataverse.iderivation.adddependent.md) | Add a derivation as a dependent of this derivation. |
+|  [changes(ticker)](./dataverse.iderivation.changes.md) | Returns a <code>Tappable</code> of the changes of this derivation. |
+|  [changesWithoutValues()](./dataverse.iderivation.changeswithoutvalues.md) | Like  but with a different performance model. <code>changesWithoutValues</code> returns a  that updates every time the derivation is updated, even if the value didn't change, and the callback is called without the value. The advantage of this is that you have control over when the derivation is freshened, it won't automatically be kept fresh. |
+|  [flatMap(fn)](./dataverse.iderivation.flatmap.md) | Same as [IDerivation.map()](./dataverse.iderivation.map.md)<!-- -->, but the mapping function can also return a derivation, in which case the derivation returned by <code>flatMap</code> takes the value of that derivation. |
+|  [getValue()](./dataverse.iderivation.getvalue.md) | Gets the current value of the derivation. If the value is stale, it causes the derivation to freshen. |
+|  [keepHot()](./dataverse.iderivation.keephot.md) | Keep the derivation hot, even if there are no tappers (subscribers). |
+|  [map(fn)](./dataverse.iderivation.map.md) | Creates a new derivation from this derivation using the provided mapping function. The new derivation's value will be <code>fn(thisDerivation.getValue())</code>. |
+|  [removeDependent(d)](./dataverse.iderivation.removedependent.md) | Remove a derivation as a dependent of this derivation. |
+|  [tapImmediate(ticker, fn)](./dataverse.iderivation.tapimmediate.md) | Convenience method that taps (subscribes to) the derivation using <code>this.changes(ticker).tap(fn)</code> and immediately calls the callback with the current value. |
 

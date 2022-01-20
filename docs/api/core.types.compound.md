@@ -9,7 +9,9 @@ A compound prop type (basically a JS object).
 <b>Signature:</b>
 
 ```typescript
-compound: <Props extends IShorthandCompoundProps>(props: Props, opts?: PropTypeConfigOpts | undefined) => PropTypeConfig_Compound<ShorthandCompoundPropsToLonghandCompoundProps<Props>>
+compound: <Props extends IShorthandCompoundProps>(props: Props, opts?: {
+    label?: string | undefined;
+} | undefined) => PropTypeConfig_Compound<ShorthandCompoundPropsToLonghandCompoundProps<Props>, Props>
 ```
 
 ## Example

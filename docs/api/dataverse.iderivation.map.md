@@ -4,6 +4,8 @@
 
 ## IDerivation.map() method
 
+Creates a new derivation from this derivation using the provided mapping function. The new derivation's value will be `fn(thisDerivation.getValue())`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ map<T>(fn: (v: V) => T): IDerivation<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | (v: V) =&gt; T |  |
+|  fn | (v: V) =&gt; T | The mapping function to use. Note: it accepts a plain value, not a derivation. |
 
 <b>Returns:</b>
 

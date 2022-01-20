@@ -4,6 +4,8 @@
 
 ## IdentityDerivationProvider.getIdentityDerivation() method
 
+Returns a derivation of the value at the provided path.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ getIdentityDerivation(path: Array<string | number>): IDerivation<unknown>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | Array&lt;string \| number&gt; |  |
+|  path | Array&lt;string \| number&gt; | The path to create the derivation at. |
 
 <b>Returns:</b>
 

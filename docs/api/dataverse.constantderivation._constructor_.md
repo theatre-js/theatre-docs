@@ -16,5 +16,5 @@ constructor(v: V);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  v | V |  |
+|  v | V | The value of the derivation. |
 

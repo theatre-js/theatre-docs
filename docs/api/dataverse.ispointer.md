@@ -4,6 +4,8 @@
 
 ## isPointer variable
 
+Returns whether `p` is a pointer.
+
 <b>Signature:</b>
 
 ```typescript

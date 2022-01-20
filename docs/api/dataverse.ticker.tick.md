@@ -4,6 +4,8 @@
 
 ## Ticker.tick() method
 
+Triggers a tick which starts executing the callbacks scheduled for this tick.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ tick(t?: number): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  t | number |  |
+|  t | number | The time at the tick. |
 
 <b>Returns:</b>
 

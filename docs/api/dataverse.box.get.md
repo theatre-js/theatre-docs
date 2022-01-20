@@ -4,6 +4,10 @@
 
 ## Box.get() method
 
+Gets the value of the Box.
+
+Note: usages of `get()` aren't tracked, they are only for retrieving the value. To track changes, you need to create a derivation.
+
 <b>Signature:</b>
 
 ```typescript

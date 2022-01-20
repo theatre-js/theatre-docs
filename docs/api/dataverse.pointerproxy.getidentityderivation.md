@@ -4,6 +4,8 @@
 
 ## PointerProxy.getIdentityDerivation() method
 
+Returns a derivation of the value at the provided sub-path of the proxied pointer.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,9 +16,9 @@ getIdentityDerivation(path: Array<string | number>): import(".").IDerivation<Poi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | Array&lt;string \| number&gt; |  |
+|  path | Array&lt;string \| number&gt; | The path to create the derivation at. |
 
 <b>Returns:</b>
 
-import(".").[IDerivation](./dataverse.iderivation.md)<!-- -->&lt;[Pointer](./dataverse.pointer.md)<!-- -->&lt;O&gt; extends import("./pointer").[PointerType](./dataverse.pointertype.md)<!-- -->&lt;infer T&gt; ? T : void&gt;
+import(".").[IDerivation](./dataverse.iderivation.md)<!-- -->&lt;Pointer&lt;O&gt; extends import("./pointer").[PointerType](./dataverse.pointertype.md)<!-- -->&lt;infer T&gt; ? T : void&gt;
 

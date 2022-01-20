@@ -4,8 +4,15 @@
 
 ## PointerProxy.pointer property
 
+Convenience pointer pointing to the root of this PointerProxy.
+
 <b>Signature:</b>
 
 ```typescript
 readonly pointer: Pointer<O>;
 ```
+
+## Remarks
+
+Allows convenient use of [valueDerivation](./dataverse.valuederivation.md) and [val](./dataverse.val.md)<!-- -->.
+

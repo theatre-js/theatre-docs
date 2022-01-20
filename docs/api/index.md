@@ -8,8 +8,8 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [@theatre/core](./core.md) |  |
-|  [@theatre/dataverse](./dataverse.md) |  |
-|  [@theatre/react](./react.md) |  |
-|  [@theatre/studio](./studio.md) |  |
+|  [@theatre/core](./core.md) | The library providing the runtime functionality of Theatre.js. |
+|  [@theatre/dataverse](./dataverse.md) | The animation-optimized FRP library powering the internals of Theatre.js. |
+|  [@theatre/react](./react.md) | React bindings for dataverse. |
+|  [@theatre/studio](./studio.md) | The library providing the editor components of Theatre.js. |
 

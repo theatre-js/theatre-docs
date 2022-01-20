@@ -4,6 +4,8 @@
 
 ## Box.set() method
 
+Sets the value of the Box.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ set(v: V): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  v | V |  |
+|  v | V | The value to update the Box with. |
 
 <b>Returns:</b>
 

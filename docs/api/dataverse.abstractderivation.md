@@ -4,6 +4,8 @@
 
 ## AbstractDerivation class
 
+Represents a derivation whose changes can be tracked. To be used as the base class for all derivations.
+
 <b>Signature:</b>
 
 ```typescript
@@ -21,30 +23,20 @@ export default abstract class AbstractDerivation<V> implements IDerivation<V>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_dependencies](./dataverse.abstractderivation._dependencies.md) |  | Set&lt;[IDerivation](./dataverse.iderivation.md)<!-- -->&lt;$IntentionalAny&gt;&gt; |  |
-|  [\_dependents](./dataverse.abstractderivation._dependents.md) |  | Set&lt;IDependent&gt; |  |
-|  [\_lastValue](./dataverse.abstractderivation._lastvalue.md) |  | undefined \| V |  |
-|  [isDerivation](./dataverse.abstractderivation.isderivation.md) |  | true |  |
-|  [isHot](./dataverse.abstractderivation.ishot.md) |  | boolean |  |
+|  [isDerivation](./dataverse.abstractderivation.isderivation.md) |  | true | Whether the object is a derivation. |
+|  [isHot](./dataverse.abstractderivation.ishot.md) |  | boolean | Whether the derivation is hot. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_addDependency(d)](./dataverse.abstractderivation._adddependency.md) |  |  |
-|  [\_becomeCold()](./dataverse.abstractderivation._becomecold.md) |  |  |
-|  [\_keepHot()](./dataverse.abstractderivation._keephot.md) |  |  |
-|  [\_markAsStale(which)](./dataverse.abstractderivation._markasstale.md) |  | This is meant to be called by subclasses |
-|  [\_reactToDependencyBecomingStale(which)](./dataverse.abstractderivation._reacttodependencybecomingstale.md) |  |  |
-|  [\_recalculate()](./dataverse.abstractderivation._recalculate.md) |  |  |
-|  [\_removeDependency(d)](./dataverse.abstractderivation._removedependency.md) |  |  |
-|  [addDependent(d)](./dataverse.abstractderivation.adddependent.md) |  |  |
-|  [changes(ticker)](./dataverse.abstractderivation.changes.md) |  |  |
-|  [changesWithoutValues()](./dataverse.abstractderivation.changeswithoutvalues.md) |  |  |
-|  [flatMap(fn)](./dataverse.abstractderivation.flatmap.md) |  |  |
-|  [getValue()](./dataverse.abstractderivation.getvalue.md) |  |  |
-|  [keepHot()](./dataverse.abstractderivation.keephot.md) |  |  |
-|  [map(fn)](./dataverse.abstractderivation.map.md) |  |  |
-|  [removeDependent(d)](./dataverse.abstractderivation.removedependent.md) |  |  |
-|  [tapImmediate(ticker, fn)](./dataverse.abstractderivation.tapimmediate.md) |  |  |
+|  [addDependent(d)](./dataverse.abstractderivation.adddependent.md) |  | Add a derivation as a dependent of this derivation. |
+|  [changes(ticker)](./dataverse.abstractderivation.changes.md) |  | Returns a <code>Tappable</code> of the changes of this derivation. |
+|  [changesWithoutValues()](./dataverse.abstractderivation.changeswithoutvalues.md) |  | Like [AbstractDerivation.changes()](./dataverse.abstractderivation.changes.md) but with a different performance model. <code>changesWithoutValues</code> returns a <code>Tappable</code> that updates every time the derivation is updated, even if the value didn't change, and the callback is called without the value. The advantage of this is that you have control over when the derivation is freshened, it won't automatically be kept fresh. |
+|  [flatMap(fn)](./dataverse.abstractderivation.flatmap.md) |  | Same as [AbstractDerivation.map()](./dataverse.abstractderivation.map.md)<!-- -->, but the mapping function can also return a derivation, in which case the derivation returned by <code>flatMap</code> takes the value of that derivation. |
+|  [getValue()](./dataverse.abstractderivation.getvalue.md) |  | Gets the current value of the derivation. If the value is stale, it causes the derivation to freshen. |
+|  [keepHot()](./dataverse.abstractderivation.keephot.md) |  | Keep the derivation hot, even if there are no tappers (subscribers). |
+|  [map(fn)](./dataverse.abstractderivation.map.md) |  | Creates a new derivation from this derivation using the provided mapping function. The new derivation's value will be <code>fn(thisDerivation.getValue())</code>. |
+|  [removeDependent(d)](./dataverse.abstractderivation.removedependent.md) |  | Remove a derivation as a dependent of this derivation. |
+|  [tapImmediate(ticker, fn)](./dataverse.abstractderivation.tapimmediate.md) |  | Convenience method that taps (subscribes to) the derivation using <code>this.changes(ticker).tap(fn)</code> and immediately calls the callback with the current value. |
 

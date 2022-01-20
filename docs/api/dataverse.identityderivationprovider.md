@@ -4,21 +4,17 @@
 
 ## IdentityDerivationProvider interface
 
+Interface for objects that can provide a derivation at a certain path.
+
 <b>Signature:</b>
 
 ```typescript
 export interface IdentityDerivationProvider 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [$$isIdentityDerivationProvider](./dataverse.identityderivationprovider.__isidentityderivationprovider.md) | true |  |
-
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [getIdentityDerivation(path)](./dataverse.identityderivationprovider.getidentityderivation.md) |  |
+|  [getIdentityDerivation(path)](./dataverse.identityderivationprovider.getidentityderivation.md) | Returns a derivation of the value at the provided path. |
 

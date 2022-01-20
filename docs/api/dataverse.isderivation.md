@@ -4,6 +4,8 @@
 
 ## isDerivation() function
 
+Returns whether `d` is a derivation.
+
 <b>Signature:</b>
 
 ```typescript

@@ -16,12 +16,28 @@ export declare function onChange<P extends PointerType<$IntentionalAny>>(pointer
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pointer | P | A pointer (like <code>object.props.x</code>) |
-|  callback | (value: P extends [PointerType](./dataverse.pointertype.md)<!-- -->&lt;infer T&gt; ? T : unknown) =&gt; void | The callback is called every time the value of pointerOrDerivation changes |
+|  pointer | P | A Pointer (like <code>object.props.x</code>) |
+|  callback | (value: P extends [PointerType](./dataverse.pointertype.md)<!-- -->&lt;infer T&gt; ? T : unknown) =&gt; void | The callback is called every time the value of pointer changes |
 
 <b>Returns:</b>
 
 VoidFn
 
 An unsubscribe function
+
+## Example
+
+Usage:
+
+```ts
+import {getProject, onChange} from '@theatre/core'
+
+const obj = getProject("A project").sheet("Scene").object("Box", {position: {x: 0}})
+
+const usubscribe = onChange(obj.props.position.x, (x) => {
+  console.log('position.x changed to:', x)
+})
+
+setTimeout(usubscribe, 10000) // stop listening to changes after 10 seconds
+```
 

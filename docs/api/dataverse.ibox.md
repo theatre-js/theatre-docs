@@ -4,6 +4,8 @@
 
 ## IBox interface
 
+Common interface for Box types. Boxes wrap a single value.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,12 +16,12 @@ export interface IBox<V>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [derivation](./dataverse.ibox.derivation.md) | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; |  |
+|  [derivation](./dataverse.ibox.derivation.md) | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; | Creates a derivation of the Box that you can use to track changes to it. |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [get()](./dataverse.ibox.get.md) |  |
-|  [set(v)](./dataverse.ibox.set.md) |  |
+|  [get()](./dataverse.ibox.get.md) | Gets the value of the Box. |
+|  [set(v)](./dataverse.ibox.set.md) | Sets the value of the Box. |
 

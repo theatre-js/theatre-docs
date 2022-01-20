@@ -4,6 +4,8 @@
 
 ## Ticker class
 
+The Ticker class helps schedule callbacks. Scheduled callbacks are executed per tick. Ticks can be triggered by an external scheduling strategy, e.g. a raf.
+
 <b>Signature:</b>
 
 ```typescript
@@ -20,15 +22,15 @@ export default class Ticker
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [time](./dataverse.ticker.time.md) |  | number |  |
+|  [time](./dataverse.ticker.time.md) |  | number | The time at the start of the current tick if there is a tick in progress, otherwise defaults to <code>performance.now()</code>. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [offNextTick(fn)](./dataverse.ticker.offnexttick.md) |  |  |
-|  [offThisOrNextTick(fn)](./dataverse.ticker.offthisornexttick.md) |  |  |
+|  [offNextTick(fn)](./dataverse.ticker.offnexttick.md) |  | De-registers a fn to be called on the next tick. |
+|  [offThisOrNextTick(fn)](./dataverse.ticker.offthisornexttick.md) |  | De-registers a fn to be called either on this tick or the next tick. |
 |  [onNextTick(fn)](./dataverse.ticker.onnexttick.md) |  | Registers a side effect to be called on the next tick. |
-|  [onThisOrNextTick(fn)](./dataverse.ticker.onthisornexttick.md) |  | Registers for fn to be called either on this tick or the next tick.<!-- -->If registerSideEffect() is called while Ticker.tick() is running, the side effect \_will\_ be called within the running tick. If you don't want this behavior, you can use registerSideEffectForNextTick().<!-- -->Note that fn will be added to a Set(). Which means, if you call registerSideEffect(fn) with the same fn twice in a single tick, it'll only run once. |
-|  [tick(t)](./dataverse.ticker.tick.md) |  |  |
+|  [onThisOrNextTick(fn)](./dataverse.ticker.onthisornexttick.md) |  | Registers for fn to be called either on this tick or the next tick.<!-- -->If <code>onThisOrNextTick()</code> is called while <code>Ticker.tick()</code> is running, the side effect \_will\_ be called within the running tick. If you don't want this behavior, you can use <code>onNextTick()</code>.<!-- -->Note that <code>fn</code> will be added to a <code>Set()</code>. Which means, if you call <code>onThisOrNextTick(fn)</code> with the same fn twice in a single tick, it'll only run once. |
+|  [tick(t)](./dataverse.ticker.tick.md) |  | Triggers a tick which starts executing the callbacks scheduled for this tick. |
 

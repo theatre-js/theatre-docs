@@ -20,7 +20,6 @@
 |  [PropTypeConfig\_Number](./core.types.proptypeconfig_number.md) |  |
 |  [PropTypeConfig\_String](./core.types.proptypeconfig_string.md) |  |
 |  [PropTypeConfig\_StringLiteral](./core.types.proptypeconfig_stringliteral.md) |  |
-|  [PropTypeConfigOpts](./core.types.proptypeconfigopts.md) |  |
 
 ## Variables
 
@@ -35,7 +34,9 @@
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [Interpolator](./core.types.interpolator.md) |  |
 |  [NumberNudgeFn](./core.types.numbernudgefn.md) |  |
 |  [PropTypeConfig\_AllPrimitives](./core.types.proptypeconfig_allprimitives.md) |  |
 |  [PropTypeConfig](./core.types.proptypeconfig.md) |  |
+|  [Sanitizer](./core.types.sanitizer.md) |  |
 

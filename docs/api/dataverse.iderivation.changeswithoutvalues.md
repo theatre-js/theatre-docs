@@ -4,6 +4,8 @@
 
 ## IDerivation.changesWithoutValues() method
 
+Like  but with a different performance model. `changesWithoutValues` returns a  that updates every time the derivation is updated, even if the value didn't change, and the callback is called without the value. The advantage of this is that you have control over when the derivation is freshened, it won't automatically be kept fresh.
+
 <b>Signature:</b>
 
 ```typescript

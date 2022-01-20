@@ -14,7 +14,7 @@ export default function iterateOver<V>(pointerOrDerivation: IDerivation<V> | Poi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pointerOrDerivation | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; \| [Pointer](./dataverse.pointer.md)<!-- -->&lt;V&gt; |  |
+|  pointerOrDerivation | [IDerivation](./dataverse.iderivation.md)<!-- -->&lt;V&gt; \| Pointer&lt;V&gt; |  |
 
 <b>Returns:</b>
 

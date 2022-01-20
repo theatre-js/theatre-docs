@@ -4,6 +4,8 @@
 
 ## Atom.setState() method
 
+Sets the state of the atom.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,7 +16,7 @@ setState(newState: State): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  newState | State |  |
+|  newState | State | The new state of the atom. |
 
 <b>Returns:</b>
 

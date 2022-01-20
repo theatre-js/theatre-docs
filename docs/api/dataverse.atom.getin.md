@@ -4,6 +4,8 @@
 
 ## Atom.getIn() method
 
+Gets the state of the atom at `path`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript

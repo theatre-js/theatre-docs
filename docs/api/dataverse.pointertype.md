@@ -4,6 +4,8 @@
 
 ## PointerType type
 
+A wrapper type for the type a `Pointer` points to.
+
 <b>Signature:</b>
 
 ```typescript
