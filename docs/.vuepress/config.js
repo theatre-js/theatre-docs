@@ -1,7 +1,7 @@
 module.exports = {
   title: "Theatre.js",
   description: "Motion graphics for the web",
-  head: [["link", {rel: "icon", href: "/public/theatrejs-logo-2x.png"}]],
+  head: [["link", { rel: "icon", href: "/public/theatrejs-logo-2x.png" }]],
   themeConfig: {
     logo: "/public/theatrejs-logo-black.svg",
     nav: [
@@ -60,6 +60,10 @@ module.exports = {
             link: "https://discord.gg/bm9f8F9Y9N",
           },
           {
+            text: "Youtube",
+            link: "https://www.youtube.com/channel/UCsp9XOCs8v2twyq5kMLzS2Q",
+          },
+          {
             text: "Twitter",
             link: "https://twitter.com/ariaminaei",
           },
@@ -73,7 +77,7 @@ module.exports = {
     sidebarDepth: 2,
     displayAllHeaders: true,
     sidebar: {
-      "/gettin-started/": "auto",
+      "/getting-started/": "auto",
       "/in-depth/": "auto",
       "/extensions/": "auto",
       "/api/": "auto",
@@ -87,4 +91,47 @@ module.exports = {
     editLinks: true,
     editLinkText: "Edit this page on Github",
   },
-}
+  plugins: [
+    [
+      "vuepress-plugin-code-copy",
+      {
+        staticIcon: true,
+        color: "rgba(255,255,255,0.4)",
+      },
+    ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: "grid",
+        before: () => `<div class="grid">`,
+        after: "</div>",
+      },
+    ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: "callout",
+        before: (info) =>
+          `<a href="${info
+            .split("|")[0]
+            .trim()}" class="callout"><p class="title">${info
+            .split("|")[1]
+            .trim()}</p>`,
+        after: "</a>",
+      },
+    ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: "light-callout",
+        before: (info) =>
+          `<a href="${info
+            .split("|")[0]
+            .trim()}" class="callout light"><p class="title">${info
+            .split("|")[1]
+            .trim()}</p>`,
+        after: "</a>",
+      },
+    ],
+  ],
+};
