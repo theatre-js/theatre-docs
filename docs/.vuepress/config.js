@@ -151,9 +151,9 @@ module.exports = {
         before: (info) =>
           `<a href="${info
             .split("|")[0]
-            .trim()}" class="callout"><p class="title">${info
+            .trim()}" class="callout"><span class="title">${info
             .split("|")[1]
-            .trim()}</p>`,
+            .trim()}</span>`,
         after: "</a>",
       },
     ],
@@ -164,9 +164,9 @@ module.exports = {
         before: (info) =>
           `<a href="${info
             .split("|")[0]
-            .trim()}" class="callout light"><p class="title">${info
+            .trim()}" class="callout light"><span class="title">${info
             .split("|")[1]
-            .trim()}</p>`,
+            .trim()}</span>`,
         after: "</a>",
       },
     ],
