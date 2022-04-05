@@ -2,7 +2,7 @@
 
 ::: tip We have yet to write this guide, but here is how you can start
 
-Take a look at the source code of [`@theatre/r3f`](https://github.com/AriaMinaei/theatre/tree/main/packages/r3f) for an example of writing extensions.
+Take a look at the source code of [`@theatre/r3f`](https://github.com/theatre-js/theatre/tree/main/packages/r3f) for an example of writing extensions.
 
 Also have a look at the extensions API at [`IStudio.extend()`](../../api/studio.istudio.extend.md), and helper methods like [`IStudio.selection`](../../api/studio.istudio.selection.md), [`IStudio.transaction()`](../../api/studio.istudio.transaction.md), [`IStudio.scrub()`](../../api/studio.istudio.scrub.md), and more.
 

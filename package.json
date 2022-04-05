@@ -7,12 +7,14 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-copy": "^1.0.6"
   },
   "devDependencies": {
     "@theatre/core": "0.4.5-dev.1",
     "@theatre/studio": "0.4.5-dev.1",
     "prettier": "^2.3.2",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "vuepress-plugin-container": "^2.1.5"
   }
 }
