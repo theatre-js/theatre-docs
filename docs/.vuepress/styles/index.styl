@@ -25,11 +25,12 @@
   border-radius 0.6rem !important
 
 .callout:hover
-  background black
+  background #1d0b00
   text-decoration none !important
 
 .callout
-  background #363537
+  transition background 0.2s
+  background #0F1112
   display block
   padding 1rem 1.5rem
   border-radius 0.6rem
@@ -41,13 +42,17 @@
     margin-bottom 0
   p
     margin 0.2rem 0
+  code, a
+    color #FF7A6B
   
 .light:hover
-  background #e1e7ed
+  background #f8f2f0
 
 .light
   background #f0f4f8  
   color black
+  a
+    color $accentColor
 
 .grid
   display grid

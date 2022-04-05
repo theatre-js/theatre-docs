@@ -1,9 +1,10 @@
 ---
-title: Try Theatre.js
-next: /basics/
+title: ▶ Quick start
+prev: /getting-started/
+next: /getting-started/basics/
 ---
 
-# ▶ Try Theatre.js
+# ▶ Quick start
 
 Theatre is framework agnostic and **can be used in any frontend web project**. Theatre can animate DOM elements, THREE.js objects, any JavaScript variable... or even IOT devices. This page gives some ways to play around with Theatre.js or quickly add Theatre.js to your web page.
 
@@ -11,12 +12,12 @@ Theatre is framework agnostic and **can be used in any frontend web project**. T
 
 ## Online playgrounds
 
-If you just want to try Theatre.js, an online playground is the easiest option. Try one of the following **starter playgrounds** to get started.
+If you just want to try Theatre.js, an online playground is the easiest option. Fork or play around with one of the following **starter playgrounds** to get started.
 
 - ["Hello World" CodePen](https://codepen.io/vez/pen/ExowjZV?editors=0010)
-- ["Hello World" CodeSandbox](https://codesandbox.io/s/theatre-js-hello-world-c6juys?file=/src/index.js)
+- ["Hello World" CodeSandbox](https://codesandbox.io/s/theatre-js-hello-world-c6juys?file=/src/index.js) _(refresh the in-sandbox browser if the example does not show up)_
 
-Once you've got a hang of the Theatre.js animation editor, check out the following cool (and a bit complicated) **examples** of using Theatre.js to animate to the music ([tutorial video](https://www.youtube.com/watch?v=QoS4gMxwq_4)).
+Once you've gotten comfortable with the Theatre.js animation editor, check out the following cool (and a bit complicated) **examples** of using Theatre.js to animate a 3D visualization in sync with music ( [tutorial video](https://www.youtube.com/watch?v=QoS4gMxwq_4)) and to animate and manipulate an SVG.
 
 - [THREE.js + music synchronization CodeSandbox - Orb shader](https://codesandbox.io/s/orb-shader-7n8j7?file=/src/index.js),
 - [THREE.js + music synchronization CodeSandbox - Flower animation](https://codesandbox.io/s/flower-animation-9x0z2?file=/src/index.js)
@@ -45,6 +46,8 @@ A prebundled package called [@Theatre/browser-bundles](https://www.npmjs.com/pac
 <script type="module">
   import "https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.4.7/dist/core-and-studio.js";
   const { core, studio } = Theatre;
+  // Start the Theatre.js UI
+  studio.initialize();
 </script>
 ```
 </code-block>
@@ -55,6 +58,8 @@ A prebundled package called [@Theatre/browser-bundles](https://www.npmjs.com/pac
 </script>
 <script>
   const { core, studio } = Theatre;
+  // Start the Theatre.js UI
+  studio.initialize();
 </script>
 ```
 </code-block>
@@ -71,38 +76,35 @@ _Advanced: if you do not need the Theatre.js UI you can <a href="https://cdn.jsd
 -->
 
 <script>
-  // Hack to wait for elements to be loaded.
-  setTimeout(addListenersToNonSameOriginDownloadLinks);
+// Hack to wait for elements to be loaded.
+setTimeout(addListenersToNonSameOriginDownloadLinks);
 
-  function addListenersToNonSameOriginDownloadLinks() {
-    for (const aEl of document.getElementsByTagName('a')) {
-      if (aEl.hasAttribute('download-non-same-origin')) {
-        aEl.addEventListener(
-          'click', 
-          (e) => {
-            e.preventDefault();
-            downloadNonSameOriginFile(aEl.href, 'core-and-studio.js')
-          }
-        );
-      }
+function addListenersToNonSameOriginDownloadLinks() {
+  for (const aEl of document.getElementsByTagName("a")) {
+    if (aEl.hasAttribute("download-non-same-origin")) {
+      aEl.addEventListener("click", (e) => {
+        e.preventDefault();
+        downloadNonSameOriginFile(aEl.href, "core-and-studio.js");
+      });
     }
   }
+}
 
-  async function downloadNonSameOriginFile(fileUrl, saveFileName) {
-      try {
-        const response = await fetch(fileUrl);
-        const blob = await response.blob();
-        
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = url;
-        a.download = saveFileName;
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-      } catch(e) {
-        window.location.href = fileUrl; // Give up and just navigate on error
-      }
-    }
+async function downloadNonSameOriginFile(fileUrl, saveFileName) {
+  try {
+    const response = await fetch(fileUrl);
+    const blob = await response.blob();
+
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = saveFileName;
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+  } catch (e) {
+    window.location.href = fileUrl; // Give up and just navigate on error
+  }
+}
 </script>
