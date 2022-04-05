@@ -4,8 +4,6 @@ prev: /getting-started/
 next: /getting-started/basics/
 ---
 
-<script src="/public/downloadNonSameOriginFile.js" type="module"></script>
-
 # ⤓ Install Theatre.js
 
 ## Prerequisites
@@ -13,7 +11,7 @@ next: /getting-started/basics/
 This page describes how to install and import Theatre.js into a web project with a [bundler](https://github.com/topics/module-bundler). If you don't already have a project with a bundler set up then (no worries) you can
 
 - follow the getting started guides of a bundler like [webpack](https://webpack.js.org/guides/getting-started), [esbuild](https://esbuild.github.io/getting-started/) or [Parcel](https://parceljs.org/getting-started/webapp/); or
-- download a starter project that includes a bundler, <a download href="/try-it-out/theatreHelloWorld.zip">theatreHelloWorld.zip</a>; or
+- download a starter project that includes a bundler, <a download href="/try-it-out/theatreHelloWorld.zip">⤓theatreHelloWorld.zip</a>; or
 - proceed _without_ a bundler by following the [Theatre.js quick start page](/getting-started/try-it-out/) instead.
 
 Got your bundler set up? Let's go!
@@ -98,37 +96,3 @@ Now, make sure your bundler runs so that `src/index.js` is built into `dist/inde
 <VideoWithDescription src="/getting-started/scene-and-object.mp4">An outline of the graph appears once the pointer moves to the left side of the page. The outline says "First Project / Scene: default / First object". The user selects "First object", after which the Details Editor panel shows up on the left. The Details Editor panel shows the three props, one a number, the other a checkbox, and the other a text input box. The user then changes these values by clicking/dragging, or entering a value via keyboard.</VideoWithDescription>
 
 Getting stuck or want some help? No worries, join our [Discord Community](https://discord.gg/bm9f8F9Y9N) or try the [Theatre.js quick start page](/getting-started/try-it-out/) instead of using a bundler. Otherwise, you've now got Theatre.js installed, imported, and up and running! Feel free to start playing around or [→ continue on in the guide](/getting-started/basics/) to learn more about projects, sheets, objects and animation.
-
-<script>
-// Hack to wait for elements to be loaded.
-setTimeout(addListenersToNonSameOriginDownloadLinks);
-
-function addListenersToNonSameOriginDownloadLinks() {
-  for (const aEl of document.getElementsByTagName("a")) {
-    if (aEl.hasAttribute("download-non-same-origin")) {
-      aEl.addEventListener("click", (e) => {
-        e.preventDefault();
-        downloadNonSameOriginFile(aEl.href, "core-and-studio.js");
-      });
-    }
-  }
-}
-
-async function downloadNonSameOriginFile(fileUrl, saveFileName) {
-  try {
-    const response = await fetch(fileUrl);
-    const blob = await response.blob();
-
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.style.display = "none";
-    a.href = url;
-    a.download = saveFileName;
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(url);
-  } catch (e) {
-    window.location.href = fileUrl; // Give up and just navigate on error
-  }
-}
-</script>

@@ -25,7 +25,7 @@ Once you've gotten comfortable with the Theatre.js animation editor, check out t
 
 ## Download a starter project folder or HTML file
 
-If you want to try out Theatre.js on your local computer you can download this starter JS project: <a download href="/try-it-out/theatreHelloWorld.zip">theatreHelloWorld.zip</a>. Once you've downloaded the zip file, unzip it, navigate to the unzipped folder in your terminal, and run these commands:
+If you want to try out Theatre.js on your local computer you can download this starter JS project: <a download href="/try-it-out/theatreHelloWorld.zip">⤓theatreHelloWorld.zip</a>. Once you've downloaded the zip file, unzip it, navigate to the unzipped folder in your terminal, and run these commands:
 
 ```bash
 npm install
@@ -34,7 +34,7 @@ npm run start
 
 You should see a "Hello World" Theatre.js web page in your browser after running the above commands.
 
-You can also download this simple HTML file and open it in your browser and favorite code editor: <a download href="/try-it-out/theatreHelloWorld.html">theatreHelloWorld.html</a>.
+You can also download this simple HTML file and open it in your browser and favorite code editor: <a download href="/try-it-out/theatreHelloWorld.html">⤓theatreHelloWorld.html</a>.
 
 ## Quickly add Theatre.js to a web page
 
@@ -74,37 +74,3 @@ _Advanced: if you do not need the Theatre.js UI you can <a href="https://cdn.jsd
   ran into issues. Probably because react and styled-components are not bundled with studio.
   Import maps may be able to resolve the issue but I got stuck on it.
 -->
-
-<script>
-// Hack to wait for elements to be loaded.
-setTimeout(addListenersToNonSameOriginDownloadLinks);
-
-function addListenersToNonSameOriginDownloadLinks() {
-  for (const aEl of document.getElementsByTagName("a")) {
-    if (aEl.hasAttribute("download-non-same-origin")) {
-      aEl.addEventListener("click", (e) => {
-        e.preventDefault();
-        downloadNonSameOriginFile(aEl.href, "core-and-studio.js");
-      });
-    }
-  }
-}
-
-async function downloadNonSameOriginFile(fileUrl, saveFileName) {
-  try {
-    const response = await fetch(fileUrl);
-    const blob = await response.blob();
-
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.style.display = "none";
-    a.href = url;
-    a.download = saveFileName;
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(url);
-  } catch (e) {
-    window.location.href = fileUrl; // Give up and just navigate on error
-  }
-}
-</script>

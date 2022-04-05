@@ -171,4 +171,43 @@ module.exports = {
       },
     ],
   ],
+  head: [
+    [
+      "script",
+      {},
+      `
+  // Hack to wait for elements to be loaded.
+  setTimeout(addListenersToNonSameOriginDownloadLinks);
+  
+  function addListenersToNonSameOriginDownloadLinks() {
+    for (const aEl of document.getElementsByTagName("a")) {
+      if (aEl.hasAttribute("download-non-same-origin")) {
+        aEl.addEventListener("click", (e) => {
+          e.preventDefault();
+          downloadNonSameOriginFile(aEl.href, "core-and-studio.js");
+        });
+      }
+    }
+  }
+  
+  async function downloadNonSameOriginFile(fileUrl, saveFileName) {
+    try {
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
+  
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.style.display = "none";
+      a.href = url;
+      a.download = saveFileName;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    } catch (e) {
+      window.location.href = fileUrl; // Give up and just navigate on error
+    }
+  }
+    `,
+    ],
+  ],
 };
