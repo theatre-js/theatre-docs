@@ -10,15 +10,11 @@ next: /getting-started/install/
 
 # <BookIcon/> The Guide
 
-Learn how to get Theatre.js up and running in an existing or new project, and learn the basics of the UI and API in pages listed below. Optionally watch along with the supplementary Theatre.js Crash Course video:
-
-<iframe style="width: 100%; height: 260px;" src="https://www.youtube.com/embed/icR9EIS1q34" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
- <a href="https://www.youtube.com/watch?v=icR9EIS1q34">Watch the Theatre.js Crash Course on YouTube</a>
-</iframe>
+Learn how to get Theatre.js up and running in an existing or new project, and learn the basics of the UI and API in pages listed below. Optionally watch along with the supplementary [Theatre.js Crash Course video](https://www.youtube.com/watch?v=icR9EIS1q34).
 
 This guide currently assumes that you are comfortable with basic frontend web technologies like HTML, CSS and JavaScript. Whether you write code or not, if you're interested in animation on the web, we invite you to join the [Theatre.js Discord Community](https://discord.gg/bm9f8F9Y9N); we aim to be inclusive and welcoming.
 
-<!-- ## 1 — Set up
+## 1 — Set up
 
 :::: grid
 ::: callout /getting-started/install/ | ⤓ Install Theatre.js
@@ -38,7 +34,7 @@ Start using Theatre.js in your browser, download a starter project, or add it to
 Learn how to use the Theatre.js UI and API to start creating detailed animations.<br>
 [Try it out →](/getting-started/basics/)
 :::
-:::: -->
+::::
 
 ## 3 — Further reading
 
