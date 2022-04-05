@@ -25,9 +25,6 @@ This guide currently assumes that you are comfortable with basic frontend web te
 Install Theatre.js from `npm` or `yarn`, build with a bundler, and get up and running in your local browser.<br>
 [Get started →](/getting-started/install/)
 :::
-
-<p style="display: flex; align-items: center; margin: 0; font-size: 1.4em;">or</p>
-
 ::: light-callout /getting-started/try-it-out/ | ▶ Quick start
 Start using Theatre.js in your browser, download a starter project, or add it to your web page with a CDN.<br>
 [Try it out →](/getting-started/try-it-out/)
@@ -60,7 +57,6 @@ Look up any and all of the packages, functions, etc. that are in Theatre.js.<br>
 Theatre.js core is open source under the Apache-2.0 License <LicenseIcon style="vertical-align: middle"/><br>
 [Contribute](https://github.com/theatre-js/theatre)
 :::
-
 ::: light-callout /extensions/ | <ExtensionIcon style="vertical-align: text-top"/> Extensions
 Theatre.js enables you to build your own extensions. Check out the [react-three-fiber](extensions/r3f) extension.<br>
 [Learn more →](/extensions/)
