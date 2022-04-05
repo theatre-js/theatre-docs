@@ -40,7 +40,7 @@ module.exports = {
           },
           {
             text: "0.3",
-            link: "https://github.com/ariaminaei/theatre/tree/0.3",
+            link: "https://github.com/theatre-js/theatre/tree/0.3",
           },
           {
             text: "0.2",
@@ -48,7 +48,7 @@ module.exports = {
           },
           {
             text: "0.1",
-            link: "https://github.com/ariaminaei/theatre/tree/0.1",
+            link: "https://github.com/theatre-js/theatre/tree/0.1",
           },
         ],
       },
@@ -65,7 +65,7 @@ module.exports = {
           },
           {
             text: "Twitter",
-            link: "https://twitter.com/ariaminaei",
+            link: "https://twitter.com/theatre_js",
           },
           {
             text: "Email",
@@ -121,8 +121,8 @@ module.exports = {
       "": "auto",
     },
     lastUpdated: "Last Updated",
-    repo: "ariaminaei/theatre",
-    docsRepo: "ariaminaei/theatre-docs",
+    repo: "theatre-js/theatre",
+    docsRepo: "theatre-js/theatre-docs",
     docsDir: "docs",
     docsBranch: "main",
     editLinks: true,

@@ -73,6 +73,6 @@ See an animated illustration of high-fidelity motion graphics in the browser and
 > ✨ [We're hiring – join the core team!](https://join.theatrejs.com/)
 
 - [Discord Community](https://discord.gg/bm9f8F9Y9N)
-- [Twitter](https://twitter.com/ariaminaei)
+- [Twitter](https://twitter.com/theatre_js)
 - [YouTube](https://www.youtube.com/channel/UCsp9XOCs8v2twyq5kMLzS2Q)
 - [Email](mailto:hello@theatrejs.com)

@@ -98,11 +98,11 @@ Attaches an audio track to the Sequence. Read more in [Sound and Music](#sound-a
 
 As of Theatre.js 0.4, each [Sheet](#sheets) has a single Sequence. We plan to support multiple Sequences in the future. Until then, you can divide your Sequence into multiple time ranges to simulate multiple Sequences.
 
-If your use-case requires multiple Sequences, [let us know in the Discord server](https://discord.gg/bm9f8F9Y9N) or [open an issue](https://github.com/AriaMinaei/theatre/issues/new) so we can prioritize it.
+If your use-case requires multiple Sequences, [let us know in the Discord server](https://discord.gg/bm9f8F9Y9N) or [open an issue](https://github.com/theatre-js/theatre/issues/new) so we can prioritize it.
 
 #### Listening to playback state changes
 
-We're working on exposing the playback state through events. Feel free to [chime in](https://github.com/AriaMinaei/theatre/issues/20) on this feature.
+We're working on exposing the playback state through events. Feel free to [chime in](https://github.com/theatre-js/theatre/issues/20) on this feature.
 
 ## Sound and Music
 
