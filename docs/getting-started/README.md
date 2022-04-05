@@ -22,17 +22,14 @@ This guide currently assumes that you are comfortable with basic frontend web te
 
 :::: grid
 ::: callout /getting-started/install/ | ⤓ Install Theatre.js
-
-Install Theatre.js from `npm` or `yarn`, build with a bundler, and get up and running in your local browser.
-
+Install Theatre.js from `npm` or `yarn`, build with a bundler, and get up and running in your local browser.<br>
 [Get started →](/getting-started/install/)
 :::
 
 <p style="display: flex; align-items: center; margin: 0; font-size: 1.4em;">or</p>
 
 ::: light-callout /getting-started/try-it-out/ | ▶ Quick start
-Start using Theatre.js in your browser, download a starter project, or add it to your web page with a CDN.
-
+Start using Theatre.js in your browser, download a starter project, or add it to your web page with a CDN.<br>
 [Try it out →](/getting-started/try-it-out/)
 :::
 ::::
@@ -41,8 +38,7 @@ Start using Theatre.js in your browser, download a starter project, or add it to
 
 :::: grid
 ::: light-callout /getting-started/basics/ | ○ Learn the basics
-Learn how to use the Theatre.js UI and API to start creating detailed animations.
-
+Learn how to use the Theatre.js UI and API to start creating detailed animations.<br>
 [Try it out →](/getting-started/basics/)
 :::
 ::::
@@ -51,27 +47,22 @@ Learn how to use the Theatre.js UI and API to start creating detailed animations
 
 :::: grid
 ::: light-callout /in-depth/ | ● In Depth Docs
-From projects, sheets, and object prop types to syncing music.
-
+From projects, sheets, and object prop types to syncing music.<br>
 [Get started →](/in-depth/)
 :::
 ::: light-callout /api/ | ▦ API Reference
-Look up any and all of the packages, functions, etc. that are in Theatre.js.
-
+Look up any and all of the packages, functions, etc. that are in Theatre.js.<br>
 [Go to reference →](/api/)
 :::
 ::::
 :::: grid
 ::: light-callout https://github.com/theatre-js/theatre | <GitHubLogoIcon style="vertical-align: text-top"/> GitHub
-
-Theatre.js core is open source under the Apache-2.0 License <LicenseIcon style="vertical-align: middle"/>
-
+Theatre.js core is open source under the Apache-2.0 License <LicenseIcon style="vertical-align: middle"/><br>
 [Contribute](https://github.com/theatre-js/theatre)
 :::
 
 ::: light-callout /extensions/ | <ExtensionIcon style="vertical-align: text-top"/> Extensions
-Theatre.js enables you to build your own extensions. Check out the [react-three-fiber](extensions/r3f) extension.
-
+Theatre.js enables you to build your own extensions. Check out the [react-three-fiber](extensions/r3f) extension.<br>
 [Learn more →](/extensions/)
 :::
 ::::
