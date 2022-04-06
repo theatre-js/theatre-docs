@@ -1,10 +1,17 @@
 ---
-title: ▶ Quick start
+title: 🚀 Quick start
 prev: /getting-started/
 next: /getting-started/basics/
 ---
 
-# ▶ Quick start
+<div class="custom_article_contents">
+
+**In this article**
+[[toc]]
+
+</div>
+
+# 🚀 Quick start
 
 Theatre is framework agnostic and **can be used in any frontend web project**. Theatre can animate DOM elements, THREE.js objects, any JavaScript variable... or even IOT devices. This page gives some ways to play around with Theatre.js or quickly add Theatre.js to your web page.
 
@@ -25,7 +32,7 @@ Once you've gotten comfortable with the Theatre.js animation editor, check out t
 
 ## Download a starter project folder or HTML file
 
-If you want to try out Theatre.js on your local computer you can download this starter JS project: <a download href="/try-it-out/theatreHelloWorld.zip">⤓theatreHelloWorld.zip</a>. Once you've downloaded the zip file, unzip it, navigate to the unzipped folder in your terminal, and run these commands:
+If you want to try out Theatre.js on your local computer you can download this starter JS project: <a download href="/try-it-out/theatreHelloWorld.zip">theatreHelloWorld.zip<span class="icon outbound">⤓</span></a>. Once you've downloaded the zip file, unzip it, navigate to the unzipped folder in your terminal, and run these commands:
 
 ```bash
 npm install
@@ -34,7 +41,7 @@ npm run start
 
 You should see a "Hello World" Theatre.js web page in your browser after running the above commands.
 
-You can also download this simple HTML file and open it in your browser and favorite code editor: <a download href="/try-it-out/theatreHelloWorld.html">⤓theatreHelloWorld.html</a>.
+You can also download this simple HTML file and open it in your browser and favorite code editor: <a download href="/try-it-out/theatreHelloWorld.html">theatreHelloWorld.html<span class="icon outbound">⤓</span></a>.
 
 ## Quickly add Theatre.js to a web page
 
@@ -65,9 +72,9 @@ A prebundled package called [@Theatre/browser-bundles](https://www.npmjs.com/pac
 </code-block>
 </code-group>
 
-You can also <a href="https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.4.7/dist/core-and-studio.js" download-non-same-origin>⤓download the prebundled JavaScript file</a> instead of using a CDN and load it using one of the two methods above.
+You can also <a href="https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.4.7/dist/core-and-studio.js" download-non-same-origin>download the prebundled JavaScript file<span class="icon outbound">⤓</span></a> instead of using a CDN and load it using one of the two methods above.
 
-_Advanced: if you do not need the Theatre.js UI you can <a href="https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.4.7/dist/core-only.min.js" download-non-same-origin>⤓download the minified core JavaScript file</a>._
+_Advanced: if you do not need the Theatre.js UI you can <a href="https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.4.7/dist/core-only.min.js" download-non-same-origin>download the minified core JavaScript file<span class="icon outbound">⤓</span></a>._
 
 <!--
   A note on ESModule CDNs like skypack: I (Elliot) tried getting them to work but

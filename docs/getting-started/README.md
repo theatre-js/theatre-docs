@@ -1,14 +1,21 @@
 ---
-title: Getting Started
+title: 📖 The Guide
 prev: /
 next: /getting-started/install/
 ---
+
+<div class="custom_article_contents">
+
+**In this article**
+[[toc]]
+
+</div>
 
 ← [What is Theatre.js?](/)
 
 ---
 
-# <BookIcon/> The Guide
+# 📖 The Guide
 
 Learn how to get Theatre.js up and running in an existing or new project, and learn the basics of the UI and API in pages listed below. Optionally watch along with the supplementary [Theatre.js Crash Course video](https://www.youtube.com/watch?v=icR9EIS1q34).
 
@@ -17,11 +24,14 @@ This guide currently assumes that you are comfortable with basic frontend web te
 ## 1 — Set up
 
 :::: grid
-::: callout /getting-started/install/ | ⤓ Install Theatre.js
+::: callout /getting-started/install/ | 💾 Install Theatre.js
 Install Theatre.js from `npm` or `yarn`, build with a bundler, and get up and running in your local browser.<br>
 [Get started →](/getting-started/install/)
 :::
-::: light-callout /getting-started/try-it-out/ | ▶ Quick start
+
+<p style="display: flex; align-items: center; margin: 0; font-size: 1.4em;">or</p>
+
+::: light-callout /getting-started/try-it-out/ | 🚀 Quick start
 Start using Theatre.js in your browser, download a starter project, or add it to your web page with a CDN.<br>
 [Try it out →](/getting-started/try-it-out/)
 :::
@@ -30,7 +40,7 @@ Start using Theatre.js in your browser, download a starter project, or add it to
 ## 2 — Learn the basics
 
 :::: grid
-::: light-callout /getting-started/basics/ | ○ Learn the basics
+::: light-callout /getting-started/basics/ | 🎓 Learn the basics
 Learn how to use the Theatre.js UI and API to start creating detailed animations.<br>
 [Try it out →](/getting-started/basics/)
 :::

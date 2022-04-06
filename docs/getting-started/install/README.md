@@ -1,17 +1,24 @@
 ---
-title: ⤓ Install Theatre.js
+title: 💾 Install Theatre.js
 prev: /getting-started/
 next: /getting-started/basics/
 ---
 
-# ⤓ Install Theatre.js
+<div class="custom_article_contents">
+
+**In this article**
+[[toc]]
+
+</div>
+
+# 💾 Install Theatre.js
 
 ## Prerequisites
 
 This page describes how to install and import Theatre.js into a web project with a [bundler](https://github.com/topics/module-bundler). If you don't already have a project with a bundler set up then (no worries) you can
 
 - follow the getting started guides of a bundler like [webpack](https://webpack.js.org/guides/getting-started), [esbuild](https://esbuild.github.io/getting-started/) or [Parcel](https://parceljs.org/getting-started/webapp/); or
-- download a starter project that includes a bundler, <a download href="/try-it-out/theatreHelloWorld.zip">⤓theatreHelloWorld.zip</a>; or
+- download a starter project that includes a bundler, <a download href="/try-it-out/theatreHelloWorld.zip">theatreHelloWorld.zip<span class="icon outbound">⤓</span></a>; or
 - proceed _without_ a bundler by following the [Theatre.js quick start page](/getting-started/try-it-out/) instead.
 
 Got your bundler set up? Let's go!

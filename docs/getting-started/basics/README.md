@@ -1,9 +1,16 @@
 ---
-title: Learn the basics
+title: 🎓 Learn the basics
 prev: /getting-started/
 ---
 
-# Learn the basics
+<div class="custom_article_contents">
+
+**In this article**
+[[toc]]
+
+</div>
+
+# 🎓 Learn the basics
 
 ## Prerequisites
 

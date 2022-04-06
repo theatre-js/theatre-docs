@@ -3,7 +3,7 @@ module.exports = {
   description: "Motion graphics for the web",
   head: [["link", { rel: "icon", href: "/public/theatrejs-logo-2x.png" }]],
   themeConfig: {
-    logo: "/public/theatrejs-logo-black.svg",
+    logo: "/public/theatrejs-logo-currentColor.svg",
     nav: [
       {
         text: "Guide",
@@ -92,7 +92,7 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             "/getting-started/install/",
-            ["/getting-started/try-it-out/", "or, ▶ Quick start"],
+            ["/getting-started/try-it-out/", "🚀 Quick start"],
           ],
         },
         {

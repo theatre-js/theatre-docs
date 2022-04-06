@@ -21,11 +21,11 @@ Theatre is for
 ## Get Started
 
 :::: grid
-::: callout /getting-started/ | <BookIcon/> The Guide
+::: callout /getting-started/ | 📖 The Guide
 Install Theatre.js, get it working, and learn the basics of the UI and API.<br>
 [Get started →](/getting-started/)
 :::
-::: light-callout /getting-started/try-it-out/ | ▶ Try It out
+::: light-callout /getting-started/try-it-out/ | 🚀 Try It out
 Try Theatre.js in your browser or quickly add it to your web page.<br>
 [Try it out →](/getting-started/try-it-out/)
 :::
